@@ -1809,7 +1809,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 2
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -8713,7 +8713,7 @@ GameObject:
   - component: {fileID: 1106239500}
   - component: {fileID: 1106239502}
   - component: {fileID: 1106239501}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Terrain_0_0_1b216e2e-7b1d-4208-8134-1aa4978ea6a8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9108,6 +9108,8 @@ GameObject:
   - component: {fileID: 1283632756}
   - component: {fileID: 1283632762}
   - component: {fileID: 1283632761}
+  - component: {fileID: 1283632763}
+  - component: {fileID: 1283632764}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -9123,7 +9125,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283632755}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.65
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -9222,7 +9224,7 @@ Transform:
   m_GameObject: {fileID: 1283632755}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.55, y: 0.5, z: 17.93}
+  m_LocalPosition: {x: 72.62, y: 0.686, z: 17.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9243,10 +9245,6 @@ MonoBehaviour:
   speed: 10
   countText: {fileID: 384985029}
   winTextObject: {fileID: 1131076151}
-  gameOverTextObject: {fileID: 1030124465}
-  livesText: {fileID: 2026919160}
-  restartButton: {fileID: 958590478}
-  startingLives: 3
 --- !u!114 &1283632762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9277,6 +9275,37 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1283632763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283632755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c435ce46247f14d44aa168d643e23aef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 5
+  isGrounded: 0
+  gravity: -9.81
+--- !u!114 &1283632764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283632755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adce2553c78abe546b189a860cc66d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingLives: 3
+  restartButton: {fileID: 958590478}
+  gameOverTextObject: {fileID: 1030124465}
+  livesText: {fileID: 2026919160}
 --- !u!43 &1295564245
 Mesh:
   m_ObjectHideFlags: 0
@@ -43615,7 +43644,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1535373282}
   - component: {fileID: 1535373281}
-  m_Layer: 0
+  - component: {fileID: 1535373283}
+  m_Layer: 3
   m_Name: TerrainGroup_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43651,6 +43681,28 @@ Transform:
   - {fileID: 1106239500}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1535373283
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535373280}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1554188480
 GameObject:
   m_ObjectHideFlags: 0
@@ -44848,7 +44900,7 @@ Transform:
   m_GameObject: {fileID: 1761578922}
   serializedVersion: 2
   m_LocalRotation: {x: 0.19421825, y: -0, z: -0, w: 0.98095834}
-  m_LocalPosition: {x: 47.87, y: 2.95, z: 9.56}
+  m_LocalPosition: {x: 72.94, y: 2.95, z: 9.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

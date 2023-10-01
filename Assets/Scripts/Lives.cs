@@ -1,18 +1,55 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Lives : MonoBehaviour
 {
+
+    private int currentLives;
+    public int startingLives = 3;
+
+    private Vector3 initialPosition;
+    Rigidbody rb;
+    public GameObject restartButton;
+
+    public GameObject gameOverTextObject;
+    public TextMeshProUGUI livesText;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
+        gameOverTextObject.SetActive(false);
+        currentLives = startingLives;
+        SetLivesText();
+        initialPosition = transform.position;
+        restartButton.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnDeath()
     {
-        
+        currentLives--;
+        SetLivesText();
+        transform.position = initialPosition;
+    }
+
+    void SetLivesText()
+    {
+        livesText.text = "Lives: " + currentLives.ToString();
+        if (currentLives <= 0)
+        {
+            gameOverTextObject.SetActive(true);
+            restartButton.SetActive(true);
+            rb.isKinematic = true;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            OnDeath();
+        }
     }
 }
