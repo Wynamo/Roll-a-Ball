@@ -177,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a73729a46dac2f04c97034f64c02603f, type: 3}
       propertyPath: m_TagString
-      value: PickUp
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -192,6 +192,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a73729a46dac2f04c97034f64c02603f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1822417873}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a73729a46dac2f04c97034f64c02603f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1822417879}
   m_SourcePrefab: {fileID: 100100000, guid: a73729a46dac2f04c97034f64c02603f, type: 3}
 --- !u!43 &150968021
 Mesh:
@@ -2815,6 +2818,9 @@ MonoBehaviour:
   player: {fileID: 1283632761}
   textFile: {fileID: 4900000, guid: ab3b3d1e08a795948a67e5619b71b40a, type: 3}
   textLines: []
+  isActive: 0
+  typeSpeed: 0
+  stopPlayerMovement: 1
 --- !u!4 &804456163
 Transform:
   m_ObjectHideFlags: 0
@@ -9372,6 +9378,7 @@ MonoBehaviour:
   speed: 10
   countText: {fileID: 384985029}
   winTextObject: {fileID: 1131076151}
+  canMove: 0
 --- !u!114 &1283632762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45353,8 +45360,26 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 122.249084, y: 149.78474, z: 160.4}
-  m_Center: {x: 0, y: 0, z: -0.0000076293945}
+  m_Size: {x: 150, y: 180, z: 290}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1822417879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822417872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a817e095fedba7a4aad92861e4f84e68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theText: {fileID: 4900000, guid: ab3b3d1e08a795948a67e5619b71b40a, type: 3}
+  startLine: 0
+  endLine: 7
+  theTextBox: {fileID: 804456162}
+  requireButtonPress: 0
+  destroyWhenActivated: 0
 --- !u!1 &1873105836
 GameObject:
   m_ObjectHideFlags: 0

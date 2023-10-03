@@ -16,10 +16,18 @@ public class TextBoxManager : MonoBehaviour
 
     public TextAsset textFile;
     public string[] textLines;
+
+    public bool isActive;
+
+    private bool isTyping = false;
+    private bool cancelTyping = false;
+
+    public float typeSpeed;
+
+    public bool stopPlayerMovement;
     // Start is called before the first frame update
     void Start()
     {
-        textBox.SetActive(false);
         player = FindObjectOfType<PlayerController>();
 
         if (textFile != null)
@@ -32,20 +40,65 @@ public class TextBoxManager : MonoBehaviour
             endAtLine = textLines.Length - 1;
         }
 
+        if (isActive)
+        {
+            EnableTextBox();
+        }
+        else
+        {
+            DisableTextBox();
+        }
+
     }
 
     private void Update()
     {
-        theText.text = textLines[currentLine];
+        if (!isActive)
+        {
+            return;
+        }
+
+      //theText.text = textLines[currentLine];
 
         if (Input.GetKeyDown(KeyCode.Return)) 
         {
-            currentLine += 1;
+            if (!isTyping)
+            {
+                currentLine += 1;
+            }
         }
 
         if (currentLine > endAtLine)
         {
-            textBox.SetActive(false);
+            DisableTextBox();
+        }
+    }
+
+    public void EnableTextBox()
+    {
+        textBox.SetActive(true);
+        isActive = true;
+
+        if (stopPlayerMovement)
+        {
+            player.canMove = false;
+        }
+    }
+
+    public void DisableTextBox()
+    {
+        textBox.SetActive(false);
+        isActive = false;
+
+        player.canMove = true;
+    }
+
+    public void ReloadScript(TextAsset theText)
+    {
+        if (theText != null)
+        {
+            textLines = new string[1];
+            textLines = (theText.text.Split('\n'));
         }
     }
 }
