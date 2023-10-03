@@ -14,6 +14,8 @@ public class TextBoxManager : MonoBehaviour
 
     public PlayerController player;
 
+    public Rigidbody rb;
+
     public TextAsset textFile;
     public string[] textLines;
 
@@ -57,7 +59,15 @@ public class TextBoxManager : MonoBehaviour
         {
             return;
         }
-
+        
+        if (player.canMove == false)
+        {
+            rb.isKinematic = true;
+        }
+        else if (player.canMove == true)
+        {
+            rb.isKinematic = false;
+        }
       //theText.text = textLines[currentLine];
 
         if (Input.GetKeyDown(KeyCode.Return)) 
@@ -65,13 +75,38 @@ public class TextBoxManager : MonoBehaviour
             if (!isTyping)
             {
                 currentLine += 1;
+
+                if (currentLine > endAtLine)
+                {
+                    DisableTextBox();
+                }
+                else
+                {
+                    StartCoroutine(TextScroll(textLines[currentLine]));
+                }
+            }
+            else if (isTyping && !cancelTyping)
+            {
+                cancelTyping = true;
             }
         }
+    }
 
-        if (currentLine > endAtLine)
+    private IEnumerator TextScroll (string lineOfText)
+    {
+        int letter = 0;
+        theText.text = "";
+        isTyping = true;
+        cancelTyping = false;
+        while (isTyping && !cancelTyping && (letter < lineOfText.Length - 1))
         {
-            DisableTextBox();
+            theText.text += lineOfText[letter];
+            letter++;
+            yield return new WaitForSeconds(typeSpeed);
         }
+        theText.text = lineOfText;
+        isTyping = false;
+        cancelTyping = false;
     }
 
     public void EnableTextBox()
@@ -83,6 +118,8 @@ public class TextBoxManager : MonoBehaviour
         {
             player.canMove = false;
         }
+
+        StartCoroutine(TextScroll(textLines[currentLine]));
     }
 
     public void DisableTextBox()
