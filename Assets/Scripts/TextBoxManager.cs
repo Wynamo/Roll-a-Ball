@@ -19,6 +19,7 @@ public class TextBoxManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        textBox.SetActive(false);
         player = FindObjectOfType<PlayerController>();
 
         if (textFile != null)
@@ -40,6 +41,11 @@ public class TextBoxManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return)) 
         {
             currentLine += 1;
+        }
+
+        if (currentLine > endAtLine)
+        {
+            textBox.SetActive(false);
         }
     }
 }
