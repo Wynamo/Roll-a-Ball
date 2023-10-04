@@ -2361,11 +2361,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of e95a0c4 (Whale Model Updated)
 --- !u!1001 &586184603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2388,11 +2383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9541417a0c006ec4d9c7811d0273a0d3, type: 3}
       propertyPath: m_LocalPosition.x
-<<<<<<< HEAD
       value: 94.41
-=======
-      value: 74.63431
->>>>>>> parent of e95a0c4 (Whale Model Updated)
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9541417a0c006ec4d9c7811d0273a0d3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2400,11 +2391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9541417a0c006ec4d9c7811d0273a0d3, type: 3}
       propertyPath: m_LocalPosition.z
-<<<<<<< HEAD
       value: 23.42
-=======
-      value: 12.431029
->>>>>>> parent of e95a0c4 (Whale Model Updated)
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9541417a0c006ec4d9c7811d0273a0d3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2447,7 +2434,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9541417a0c006ec4d9c7811d0273a0d3, type: 3}
-<<<<<<< HEAD
 --- !u!1 &599596285
 GameObject:
   m_ObjectHideFlags: 0
@@ -2581,9 +2567,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599596285}
   m_CullTransparentMesh: 1
->>>>>>> 6e9d870908fd1443dc2ad80bf8dd15581a8dd158
-=======
->>>>>>> parent of e95a0c4 (Whale Model Updated)
 --- !u!1 &639341788
 GameObject:
   m_ObjectHideFlags: 0
