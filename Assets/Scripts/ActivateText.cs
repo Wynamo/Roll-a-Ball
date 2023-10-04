@@ -6,8 +6,6 @@ using UnityEngine;
 public class ActivateText : MonoBehaviour
 {
 
-    //public bool isActive;
-
     public TextAsset theText;
 
     public int startLine;
