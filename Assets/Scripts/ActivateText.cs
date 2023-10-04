@@ -11,6 +11,8 @@ public class ActivateText : MonoBehaviour
     public int startLine;
     public int endLine;
 
+    public string[] textLines;
+
     public TextBoxManager theTextBox;
 
     public bool requireButtonPress;
@@ -22,6 +24,20 @@ public class ActivateText : MonoBehaviour
     void Start()
     {
         theTextBox = FindObjectOfType<TextBoxManager>();
+        if (endLine == 0)
+        {
+            endLine = 0;
+        }
+
+        if (theText != null)
+        {
+            textLines = (theText.text.Split('\n'));
+        }
+
+        if (endLine == 0)
+        {
+            endLine = textLines.Length - 1;
+        }
     }
 
     // Update is called once per frame
