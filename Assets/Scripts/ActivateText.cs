@@ -6,6 +6,8 @@ using UnityEngine;
 public class ActivateText : MonoBehaviour
 {
 
+    //public bool isActive;
+
     public TextAsset theText;
 
     public int startLine;
@@ -29,10 +31,15 @@ public class ActivateText : MonoBehaviour
     {
         if (waitForPress && Input.GetKeyDown(KeyCode.E))
         {
-            theTextBox.ReloadScript(theText);
-            theTextBox.currentLine = startLine;
-            theTextBox.endAtLine = endLine;
-            theTextBox.EnableTextBox();
+            
+            if (!theTextBox.isActive) 
+            {
+                theTextBox.isActive = true;
+                theTextBox.ReloadScript(theText);
+                theTextBox.currentLine = startLine;
+                theTextBox.endAtLine = endLine;
+                theTextBox.EnableTextBox();
+            }
 
             if (destroyWhenActivated)
             {
@@ -50,10 +57,14 @@ public class ActivateText : MonoBehaviour
                 waitForPress = true;
                 return;
             }
+            else
+            {
             theTextBox.ReloadScript(theText);
             theTextBox.currentLine = startLine;
             theTextBox.endAtLine = endLine;
             theTextBox.EnableTextBox();
+            }
+            
 
             if (destroyWhenActivated)
             {
@@ -63,6 +74,7 @@ public class ActivateText : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
+        
         if (other.name == "Player")
         {
             waitForPress = false;
@@ -70,4 +82,4 @@ public class ActivateText : MonoBehaviour
     }
 }
 
-//this activate text file is made by following the tutorial by gamesplusjames on youtube https://www.youtube.com/watch?v=7KNQYPcx-uU
+//most of this activate text file is made by following the tutorial by gamesplusjames on youtube https://www.youtube.com/watch?v=7KNQYPcx-uU
