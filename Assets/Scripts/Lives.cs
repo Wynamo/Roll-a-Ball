@@ -10,8 +10,10 @@ public class Lives : MonoBehaviour
     public int startingLives = 3;
 
     private Vector3 initialPosition;
-    Rigidbody rb;
+    
     public GameObject restartButton;
+
+    public GameObject quitButton;
 
     public GameObject gameOverTextObject;
     public TextMeshProUGUI livesText;
@@ -20,7 +22,7 @@ public class Lives : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1f;
-        rb = GetComponent<Rigidbody>();
+        quitButton.SetActive(false);
         gameOverTextObject.SetActive(false);
         currentLives = startingLives;
         SetLivesText();
@@ -42,6 +44,7 @@ public class Lives : MonoBehaviour
         {
             gameOverTextObject.SetActive(true);
             restartButton.SetActive(true);
+            quitButton.SetActive(true);
             Time.timeScale = 0f;
         }
     }
