@@ -19,6 +19,7 @@ public class Lives : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1f;
         rb = GetComponent<Rigidbody>();
         gameOverTextObject.SetActive(false);
         currentLives = startingLives;
@@ -41,7 +42,7 @@ public class Lives : MonoBehaviour
         {
             gameOverTextObject.SetActive(true);
             restartButton.SetActive(true);
-            rb.isKinematic = true;
+            Time.timeScale = 0f;
         }
     }
 
