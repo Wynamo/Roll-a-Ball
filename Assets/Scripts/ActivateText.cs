@@ -27,7 +27,7 @@ public class ActivateText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (waitForPress && Input.GetKeyDown(KeyCode.J))
+        if (waitForPress && Input.GetKeyDown(KeyCode.E))
         {
             theTextBox.ReloadScript(theText);
             theTextBox.currentLine = startLine;
@@ -69,3 +69,5 @@ public class ActivateText : MonoBehaviour
         }
     }
 }
+
+//this activate text file is made by following the tutorial by gamesplusjames on youtube https://www.youtube.com/watch?v=7KNQYPcx-uU

@@ -55,11 +55,6 @@ public class TextBoxManager : MonoBehaviour
 
     private void Update()
     {
-        if (!isActive)
-        {
-            return;
-        }
-        
         if (player.canMove == false)
         {
             rb.isKinematic = true;
@@ -68,7 +63,6 @@ public class TextBoxManager : MonoBehaviour
         {
             rb.isKinematic = false;
         }
-      //theText.text = textLines[currentLine];
 
         if (Input.GetKeyDown(KeyCode.Return)) 
         {
@@ -139,3 +133,5 @@ public class TextBoxManager : MonoBehaviour
         }
     }
 }
+
+//this text box manager is made by following the tutorial by gamesplusjames on youtube https://www.youtube.com/watch?v=ehmBIP5sj0M
