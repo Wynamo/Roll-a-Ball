@@ -56,4 +56,15 @@ public class Lives : MonoBehaviour
             OnDeath();
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("OneUp"))
+        {
+            other.gameObject.SetActive(false);
+            currentLives++;
+            SetLivesText();
+        }
+
+    }
 }
