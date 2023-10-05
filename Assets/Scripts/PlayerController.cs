@@ -8,6 +8,8 @@ using UnityEngine.Rendering.Universal;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 0;
+    public float maxSpeed;
+
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
 
@@ -47,6 +49,10 @@ public class PlayerController : MonoBehaviour
 
      void FixedUpdate()
     {
+        if (rb.velocity.magnitude > maxSpeed)
+        {
+            rb.velocity = rb.velocity.normalized * maxSpeed;
+        }
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
        
         rb.AddForce(movement * speed);
