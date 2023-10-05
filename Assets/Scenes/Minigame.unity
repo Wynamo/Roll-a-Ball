@@ -3242,61 +3242,17 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &804456161
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 804456163}
-  - component: {fileID: 804456162}
-  m_Layer: 0
-  m_Name: Text Box Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &804456162
+--- !u!114 &804456162 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8218630905878056820, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+  m_PrefabInstance: {fileID: 5669932022419150346}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 804456161}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70503cd2386e0f44facbe8adb0db9fb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textBox: {fileID: 639341788}
-  theText: {fileID: 1793475308}
-  currentLine: 0
-  endAtLine: 0
-  player: {fileID: 1283632761}
-  rb: {fileID: 1283632756}
-  textFile: {fileID: 4900000, guid: ab3b3d1e08a795948a67e5619b71b40a, type: 3}
-  textLines: []
-  isActive: 0
-  typeSpeed: 0.025
-  stopPlayerMovement: 1
---- !u!4 &804456163
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 804456161}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 448.06894, y: 305.00992, z: 561.1807}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &816890864
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55728,52 +55684,17 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1667665378
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1667665380}
-  - component: {fileID: 1667665379}
-  m_Layer: 0
-  m_Name: Pause Menu Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1667665379
+--- !u!114 &1667665379 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6897135949229919657, guid: ffbcd06781d7d1a458c5ed66f0a6cc93, type: 3}
+  m_PrefabInstance: {fileID: 994322730189812337}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1667665378}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6e26a76528683c4aa9d3c0dca0e76bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 1215275862}
-  isActive: 0
---- !u!4 &1667665380
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1667665378}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1061.5363, y: -782.57104, z: 1641.75}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1674173729
 GameObject:
   m_ObjectHideFlags: 0
@@ -62100,6 +62021,67 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1001 &994322730189812337
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3549492236471252161, guid: ffbcd06781d7d1a458c5ed66f0a6cc93, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1061.5363
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549492236471252161, guid: ffbcd06781d7d1a458c5ed66f0a6cc93, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -782.57104
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549492236471252161, guid: ffbcd06781d7d1a458c5ed66f0a6cc93, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1641.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549492236471252161, guid: ffbcd06781d7d1a458c5ed66f0a6cc93, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549492236471252161, guid: ffbcd06781d7d1a458c5ed66f0a6cc93, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549492236471252161, guid: ffbcd06781d7d1a458c5ed66f0a6cc93, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549492236471252161, guid: ffbcd06781d7d1a458c5ed66f0a6cc93, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549492236471252161, guid: ffbcd06781d7d1a458c5ed66f0a6cc93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549492236471252161, guid: ffbcd06781d7d1a458c5ed66f0a6cc93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549492236471252161, guid: ffbcd06781d7d1a458c5ed66f0a6cc93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6897135949229919657, guid: ffbcd06781d7d1a458c5ed66f0a6cc93, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 1215275862}
+    - target: {fileID: 7761802336170498727, guid: ffbcd06781d7d1a458c5ed66f0a6cc93, type: 3}
+      propertyPath: m_Name
+      value: Pause Menu Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ffbcd06781d7d1a458c5ed66f0a6cc93, type: 3}
 --- !u!1001 &1875173704720400629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62278,6 +62260,79 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1004452552}
   m_SourcePrefab: {fileID: 100100000, guid: 7302510ee24462a4c923624654285a2a, type: 3}
+--- !u!1001 &5669932022419150346
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1542244329543623723, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 448.06894
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542244329543623723, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 305.00992
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542244329543623723, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 561.1807
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542244329543623723, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542244329543623723, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542244329543623723, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542244329543623723, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542244329543623723, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542244329543623723, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542244329543623723, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2582622867914096710, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+      propertyPath: m_Name
+      value: Text Box Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218630905878056820, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 1283632756}
+    - target: {fileID: 8218630905878056820, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1283632761}
+    - target: {fileID: 8218630905878056820, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+      propertyPath: textBox
+      value: 
+      objectReference: {fileID: 639341788}
+    - target: {fileID: 8218630905878056820, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+      propertyPath: theText
+      value: 
+      objectReference: {fileID: 1793475308}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -62297,9 +62352,9 @@ SceneRoots:
   - {fileID: 1535373282}
   - {fileID: 584085626}
   - {fileID: 4874604288135749858}
-  - {fileID: 804456163}
+  - {fileID: 5669932022419150346}
   - {fileID: 1882177164}
   - {fileID: 1480530686}
   - {fileID: 1875173704720400629}
   - {fileID: 1549912806}
-  - {fileID: 1667665380}
+  - {fileID: 994322730189812337}
