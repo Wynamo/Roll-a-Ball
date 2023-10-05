@@ -8,7 +8,7 @@ using UnityEngine.Rendering.Universal;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 0;
-    public float maxSpeed;
+    public float maxSpeed = 15;
 
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
