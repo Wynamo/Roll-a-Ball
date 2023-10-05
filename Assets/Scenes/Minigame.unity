@@ -10411,6 +10411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  maxSpeed: 15
   countText: {fileID: 384985029}
   winTextObject: {fileID: 1131076151}
   canMove: 0
