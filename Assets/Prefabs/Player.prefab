@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 6773480514151726270}
   - component: {fileID: 3275910731065517652}
   - component: {fileID: 5671762506140487254}
+  - component: {fileID: 4857019503143652254}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -181,8 +182,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   maxSpeed: 15
-  countText: {fileID: 0}
-  winTextObject: {fileID: 0}
   canMove: 0
 --- !u!114 &3275910731065517652
 MonoBehaviour:
@@ -216,3 +215,17 @@ MonoBehaviour:
   quitButton: {fileID: 0}
   gameOverTextObject: {fileID: 0}
   livesText: {fileID: 0}
+--- !u!114 &4857019503143652254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500051348141700282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f1974c2ae451a344998be1ebb47375a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countText: {fileID: 0}
+  winTextObject: {fileID: 0}
