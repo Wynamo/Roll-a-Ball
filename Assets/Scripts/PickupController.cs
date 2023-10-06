@@ -27,7 +27,7 @@ public class PickupController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 9)
+        if (count >= 12)
         {
             winTextObject.SetActive(true);
         }
