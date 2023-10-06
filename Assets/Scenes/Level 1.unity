@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: b0d538e31bde0a340bf84cbe734113de, type: 2}
   m_LightingSettings: {fileID: 1629001629}
 --- !u!196 &4
 NavMeshSettings:
@@ -20435,7 +20435,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 101417}
+  m_Mesh: {fileID: 2102742050}
 --- !u!33 &624127075
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -22318,6 +22318,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3275910731065517652, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4007381146204224491, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4007381146204224491, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4007381146204224491, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4007381146204224491, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 353.831
@@ -22363,6 +22379,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1528620045}
     - target: {fileID: 5671762506140487254, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5671762506140487254, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
       propertyPath: quitButton
       value: 
       objectReference: {fileID: 1459906591}
@@ -22375,6 +22395,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2018912177}
     - target: {fileID: 6773480514151726270, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
+      propertyPath: maxSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6773480514151726270, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
       propertyPath: countText
       value: 
       objectReference: {fileID: 1708212680}
@@ -22382,6 +22406,10 @@ PrefabInstance:
       propertyPath: winTextObject
       value: 
       objectReference: {fileID: 1765513689}
+    - target: {fileID: 7896064583089081060, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2072676146}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
