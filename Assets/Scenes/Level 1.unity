@@ -4017,7 +4017,7 @@ GameObject:
   - component: {fileID: 237726693}
   - component: {fileID: 237726692}
   m_Layer: 0
-  m_Name: ff
+  m_Name: InvisWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7178,7 +7178,7 @@ GameObject:
   - component: {fileID: 513613304}
   - component: {fileID: 513613303}
   m_Layer: 0
-  m_Name: ff (2)
+  m_Name: InvisWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7826,7 +7826,7 @@ GameObject:
   - component: {fileID: 574167028}
   - component: {fileID: 574167027}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: Under Ground Solid Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22981,7 +22981,7 @@ GameObject:
   - component: {fileID: 817837516}
   - component: {fileID: 817837515}
   m_Layer: 0
-  m_Name: ff (3)
+  m_Name: InvisWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25695,7 +25695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3177540106052085726, guid: 246704fd46c7ed44190266a49b5616b0, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3177540106052085726, guid: 246704fd46c7ed44190266a49b5616b0, type: 3}
       propertyPath: m_SizeDelta.y
@@ -26431,7 +26431,7 @@ GameObject:
   - component: {fileID: 983250366}
   - component: {fileID: 983250365}
   m_Layer: 0
-  m_Name: ff (1)
+  m_Name: InvisWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

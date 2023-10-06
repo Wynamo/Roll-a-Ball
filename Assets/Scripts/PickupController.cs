@@ -13,6 +13,7 @@ public class PickupController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1f;
         SetCountText();
         count = 0;
         winTextObject.SetActive(false);
@@ -27,9 +28,10 @@ public class PickupController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 12)
+        if (count >= 15)
         {
             winTextObject.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 
