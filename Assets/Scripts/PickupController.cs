@@ -12,6 +12,7 @@ public class PickupController : MonoBehaviour
 
     public string levelNameCompletedKey;
 
+    public GameObject continueButton;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
 
@@ -24,6 +25,7 @@ public class PickupController : MonoBehaviour
         SetCountText();
         count = 0;
         winTextObject.SetActive(false);
+        continueButton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -37,8 +39,8 @@ public class PickupController : MonoBehaviour
         countText.text = "Count: " + count.ToString();
         if (count >= numberOfPickups)
         {
-            SceneManager.LoadScene("World Map");
             winTextObject.SetActive(true);
+            continueButton.SetActive(true);
             Time.timeScale = 0f;
             SetBool(levelNameCompletedKey, true);
         }
