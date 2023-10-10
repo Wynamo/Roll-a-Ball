@@ -11,6 +11,8 @@ public class ActivateLevel : MonoBehaviour
 
     public string sceneName;
 
+    public GameObject player;
+
     public GameObject levelBeaten;
     public GameObject levelNotBeaten;
 
@@ -28,6 +30,7 @@ public class ActivateLevel : MonoBehaviour
 
         if (isBeaten)
         {
+            player.transform.position = GetLevelPosition();
             EnableLevelComplete();
             ActivateNextLevel();
         }
@@ -80,5 +83,12 @@ public class ActivateLevel : MonoBehaviour
     public void ActivateNextLevel()
     {
         nextLevel.SetActive(true);
+    }
+
+    public Vector3 GetLevelPosition()
+    {
+        Vector3 playerPosition = levelBeaten.transform.position;
+        //playerPosition.y = 1f;
+        return playerPosition;
     }
 }
