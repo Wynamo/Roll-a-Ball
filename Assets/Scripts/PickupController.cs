@@ -1,10 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PickupController : MonoBehaviour
 {
+    private int numberOfPickups;
+
+    public string levelNameCompletedKey;
 
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
@@ -13,6 +19,7 @@ public class PickupController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        numberOfPickups = CountPickups();
         Time.timeScale = 1f;
         SetCountText();
         count = 0;
@@ -28,10 +35,12 @@ public class PickupController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 15)
+        if (count >= numberOfPickups)
         {
+            SceneManager.LoadScene("World Map");
             winTextObject.SetActive(true);
             Time.timeScale = 0f;
+            SetBool(levelNameCompletedKey, true);
         }
     }
 
@@ -44,5 +53,15 @@ public class PickupController : MonoBehaviour
             SetCountText();
         }
 
+    }
+
+    private void SetBool(string key, bool value)
+    {
+        PlayerPrefs.SetInt(key, value ? 1 : 0);
+    }
+
+    public int CountPickups()
+    {
+        return GameObject.FindGameObjectsWithTag("PickUp").Count();
     }
 }

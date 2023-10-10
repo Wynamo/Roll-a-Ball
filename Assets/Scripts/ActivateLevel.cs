@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ActivateLevel : MonoBehaviour
 {
+    public GameObject nextLevel;
 
     private bool waitForPress;
 
@@ -15,15 +16,20 @@ public class ActivateLevel : MonoBehaviour
 
     public bool isBeaten;
 
+    public string playerPrefLevelName;
+
     public LevelSelectManager theLevelSelector;
     // Start is called before the first frame update
     void Start()
     {
+        // PlayerPrefs.DeleteKey("level1complete");
+        isBeaten = GetBool(playerPrefLevelName);
         theLevelSelector = FindObjectOfType<LevelSelectManager>();
 
         if (isBeaten)
         {
             EnableLevelComplete();
+            ActivateNextLevel();
         }
         else
         {
@@ -64,5 +70,15 @@ public class ActivateLevel : MonoBehaviour
     {
         levelBeaten.SetActive(false);
         levelNotBeaten.SetActive(true);
+    }
+
+    private bool GetBool(string key)
+    {
+        return PlayerPrefs.GetInt(key) == 1;
+    }
+
+    public void ActivateNextLevel()
+    {
+        nextLevel.SetActive(true);
     }
 }

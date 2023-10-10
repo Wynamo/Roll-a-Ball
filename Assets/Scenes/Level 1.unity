@@ -22284,6 +22284,10 @@ PrefabInstance:
       propertyPath: winTextObject
       value: 
       objectReference: {fileID: 1765513689}
+    - target: {fileID: 4857019503143652254, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
+      propertyPath: levelNameCompletedKey
+      value: level1complete
+      objectReference: {fileID: 0}
     - target: {fileID: 5047200738772746141, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
