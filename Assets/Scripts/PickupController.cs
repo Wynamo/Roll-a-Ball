@@ -37,7 +37,7 @@ public class PickupController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= numberOfPickups)
+        if (count >= 1)
         {
             winTextObject.SetActive(true);
             continueButton.SetActive(true);

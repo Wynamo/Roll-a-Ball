@@ -19,4 +19,11 @@ public class LevelManager : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void NewGame(string sceneName)
+    {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetString("newGame", "true");
+        SceneManager.LoadScene(sceneName);
+    }
 }
