@@ -24,13 +24,12 @@ public class ActivateLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // PlayerPrefs.DeleteKey("level1complete");
         isBeaten = GetBool(playerPrefLevelName);
         theLevelSelector = FindObjectOfType<LevelSelectManager>();
 
         if (isBeaten)
         {
-            player.transform.position = GetLevelPosition();
+            player.transform.position = SetPlayerPosition();
             EnableLevelComplete();
             ActivateNextLevel();
         }
@@ -85,10 +84,10 @@ public class ActivateLevel : MonoBehaviour
         nextLevel.SetActive(true);
     }
 
-    public Vector3 GetLevelPosition()
+    public Vector3 SetPlayerPosition()
     {
         Vector3 playerPosition = levelBeaten.transform.position;
-        //playerPosition.y = 1f;
+        playerPosition.y = 2.9f;
         return playerPosition;
     }
 }
