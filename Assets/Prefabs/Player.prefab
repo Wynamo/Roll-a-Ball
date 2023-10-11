@@ -227,5 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f1974c2ae451a344998be1ebb47375a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelNameCompletedKey: 
+  continueButton: {fileID: 0}
   countText: {fileID: 0}
   winTextObject: {fileID: 0}
