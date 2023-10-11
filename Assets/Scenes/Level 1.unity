@@ -22282,6 +22282,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1708212680}
     - target: {fileID: 4857019503143652254, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
+      propertyPath: levelName
+      value: Level 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857019503143652254, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
       propertyPath: winTextObject
       value: 
       objectReference: {fileID: 1765513689}
@@ -22547,6 +22551,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b3c2cd0a3fa9658469bd471842ce2cc5, type: 2}
+    - target: {fileID: 6293396763509874894, guid: ef0f407c5205099498626fefe6e53795, type: 3}
+      propertyPath: m_TagString
+      value: Door
+      objectReference: {fileID: 0}
     - target: {fileID: 8033807622216356980, guid: ef0f407c5205099498626fefe6e53795, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7778

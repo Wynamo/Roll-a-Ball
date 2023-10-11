@@ -345,6 +345,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 384985029}
     - target: {fileID: 4857019503143652254, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
+      propertyPath: levelName
+      value: Test Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857019503143652254, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
       propertyPath: winTextObject
       value: 
       objectReference: {fileID: 1131076151}

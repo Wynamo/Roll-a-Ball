@@ -18,18 +18,25 @@ public class ActivateLevel : MonoBehaviour
 
     public bool isBeaten;
 
+    public string levelLastCompleted;
+
     public string playerPrefLevelName;
 
     public LevelSelectManager theLevelSelector;
     // Start is called before the first frame update
     void Start()
     {
+        levelLastCompleted = PlayerPrefs.GetString("lastLevelCompleted");
         isBeaten = GetBool(playerPrefLevelName);
         theLevelSelector = FindObjectOfType<LevelSelectManager>();
 
-        if (isBeaten)
+        if (levelLastCompleted == sceneName)
         {
             player.transform.position = SetPlayerPosition();
+        }
+
+        if (isBeaten)
+        {
             EnableLevelComplete();
             ActivateNextLevel();
         }

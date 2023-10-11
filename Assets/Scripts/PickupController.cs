@@ -10,6 +10,8 @@ public class PickupController : MonoBehaviour
 {
     private int numberOfPickups;
 
+    public string levelName;
+
     public string levelNameCompletedKey;
 
     public GameObject continueButton;
@@ -43,6 +45,7 @@ public class PickupController : MonoBehaviour
             continueButton.SetActive(true);
             Time.timeScale = 0f;
             SetBool(levelNameCompletedKey, true);
+            PlayerPrefs.SetString("lastLevelCompleted", levelName);
         }
     }
 
