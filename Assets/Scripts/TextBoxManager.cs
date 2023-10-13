@@ -12,7 +12,11 @@ public class TextBoxManager : MonoBehaviour
     public int currentLine;
     public int endAtLine;
 
+    public GameObject winTextObject;
+    public GameObject continueButton;
+
     public PlayerController player;
+    public PickupController pickupController;
 
     public Rigidbody rb;
 
@@ -72,7 +76,19 @@ public class TextBoxManager : MonoBehaviour
 
                 if (currentLine > endAtLine)
                 {
-                    DisableTextBox();
+                    if (pickupController.winOnTalk && pickupController.numberOfPickups == PlayerPrefs.GetInt(pickupController.levelName))
+                    {
+                        pickupController.SetBool(pickupController.levelNameCompletedKey, true);
+                        PlayerPrefs.SetString("lastLevelCompleted", pickupController.levelName);
+                        DisableTextBox();
+                        winTextObject.SetActive(true);
+                        continueButton.SetActive(true);
+                        Time.timeScale = 0f;
+                    }
+                    else
+                    {
+                        DisableTextBox();
+                    }
                 }
                 else
                 {

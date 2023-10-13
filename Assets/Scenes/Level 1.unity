@@ -5461,6 +5461,18 @@ PrefabInstance:
       propertyPath: theText
       value: 
       objectReference: {fileID: 575197348}
+    - target: {fileID: 8218630905878056820, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1765513689}
+    - target: {fileID: 8218630905878056820, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+      propertyPath: continueButton
+      value: 
+      objectReference: {fileID: 6516127390483143867}
+    - target: {fileID: 8218630905878056820, guid: 044373df30f24b145866ddf7adfa2d3c, type: 3}
+      propertyPath: pickupController
+      value: 
+      objectReference: {fileID: 754348294}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22286,6 +22298,10 @@ PrefabInstance:
       value: Level 1
       objectReference: {fileID: 0}
     - target: {fileID: 4857019503143652254, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
+      propertyPath: winOnTalk
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857019503143652254, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
       propertyPath: winTextObject
       value: 
       objectReference: {fileID: 1765513689}
@@ -22356,6 +22372,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 385e60100a259b64ebbc731a4c410048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &754348294 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4857019503143652254, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
+  m_PrefabInstance: {fileID: 754348291}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62707065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f1974c2ae451a344998be1ebb47375a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!43 &758927531
@@ -43901,9 +43928,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3392059756119443072, guid: 92080661a9a0c8b4e9380485c2f9c498, type: 3}
+      propertyPath: winText
+      value: 
+      objectReference: {fileID: 4900000, guid: b6566db28b38c1a45aafc310bed4d399, type: 3}
+    - target: {fileID: 3392059756119443072, guid: 92080661a9a0c8b4e9380485c2f9c498, type: 3}
       propertyPath: theTextBox
       value: 
       objectReference: {fileID: 1214076051}
+    - target: {fileID: 3392059756119443072, guid: 92080661a9a0c8b4e9380485c2f9c498, type: 3}
+      propertyPath: pickupController
+      value: 
+      objectReference: {fileID: 754348294}
     - target: {fileID: 6967338404158942554, guid: 92080661a9a0c8b4e9380485c2f9c498, type: 3}
       propertyPath: m_Name
       value: OldManExpo3
@@ -43948,13 +43983,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3392059756119443072, guid: 92080661a9a0c8b4e9380485c2f9c498, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6967338404158942554, guid: 92080661a9a0c8b4e9380485c2f9c498, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2060849170}
+    - targetCorrespondingSourceObject: {fileID: 6967338404158942554, guid: 92080661a9a0c8b4e9380485c2f9c498, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2060849171}
   m_SourcePrefab: {fileID: 100100000, guid: 92080661a9a0c8b4e9380485c2f9c498, type: 3}
 --- !u!1 &1266416904
 GameObject:
@@ -71936,6 +71975,30 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2060849171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060849165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18426d16d85a047498adbc67bcc3bee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theText: {fileID: 4900000, guid: a5c0b5937e7f7264792b9c5ad24c41f1, type: 3}
+  winText: {fileID: 4900000, guid: b6566db28b38c1a45aafc310bed4d399, type: 3}
+  startLine: 0
+  endLine: 0
+  winStartLine: 0
+  winEndLine: 0
+  textLines: []
+  winTextLines: []
+  theTextBox: {fileID: 1214076051}
+  pickupController: {fileID: 754348294}
+  requireButtonPress: 1
+  destroyWhenActivated: 0
 --- !u!1 &2072676144
 GameObject:
   m_ObjectHideFlags: 0

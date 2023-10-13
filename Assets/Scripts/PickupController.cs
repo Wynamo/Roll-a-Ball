@@ -8,11 +8,13 @@ using UnityEngine.SceneManagement;
 
 public class PickupController : MonoBehaviour
 {
-    private int numberOfPickups;
+    public int numberOfPickups;
 
     public string levelName;
 
     public string levelNameCompletedKey;
+
+    public bool winOnTalk;
 
     public GameObject continueButton;
     public TextMeshProUGUI countText;
@@ -22,6 +24,7 @@ public class PickupController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerPrefs.SetInt(levelName, 0);
         numberOfPickups = CountPickups();
         Time.timeScale = 1f;
         SetCountText();
@@ -39,13 +42,21 @@ public class PickupController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 1)
+        if (PlayerPrefs.GetInt(levelName) >= numberOfPickups)
         {
-            winTextObject.SetActive(true);
-            continueButton.SetActive(true);
-            Time.timeScale = 0f;
-            SetBool(levelNameCompletedKey, true);
-            PlayerPrefs.SetString("lastLevelCompleted", levelName);
+            if (winOnTalk)
+            {
+                return;
+            }
+            else
+            {
+                winTextObject.SetActive(true);
+                continueButton.SetActive(true);
+                Time.timeScale = 0f;
+                SetBool(levelNameCompletedKey, true);
+                PlayerPrefs.SetString("lastLevelCompleted", levelName);
+            }
+            
         }
     }
 
@@ -55,12 +66,13 @@ public class PickupController : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             count = count + 1;
+            PlayerPrefs.SetInt(levelName, PlayerPrefs.GetInt(levelName) + 1);
             SetCountText();
         }
 
     }
 
-    private void SetBool(string key, bool value)
+    public void SetBool(string key, bool value)
     {
         PlayerPrefs.SetInt(key, value ? 1 : 0);
     }

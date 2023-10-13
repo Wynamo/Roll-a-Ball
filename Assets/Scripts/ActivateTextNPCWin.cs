@@ -2,18 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class ActivateText : MonoBehaviour
+public class ActivateTextNPCWin : MonoBehaviour
 {
 
     public TextAsset theText;
+    public TextAsset winText;
 
     public int startLine;
     public int endLine;
+    public int winStartLine;
+    public int winEndLine;
 
     public string[] textLines;
+    public string[] winTextLines;
 
     public TextBoxManager theTextBox;
+
+    public PickupController pickupController;
 
     public bool requireButtonPress;
     private bool waitForPress;
@@ -34,6 +41,16 @@ public class ActivateText : MonoBehaviour
         {
             endLine = textLines.Length - 1;
         }
+
+        if (winText != null)
+        {
+            winTextLines = (winText.text.Split('\n'));
+        }
+
+        if (winEndLine == 0)
+        {
+            winEndLine = winTextLines.Length - 1;
+        }
     }
 
     // Update is called once per frame
@@ -41,14 +58,26 @@ public class ActivateText : MonoBehaviour
     {
         if (waitForPress && Input.GetKeyDown(KeyCode.E))
         {
-            
-            if (!theTextBox.isActive) 
+
+            if (!theTextBox.isActive)
             {
-                theTextBox.isActive = true;
-                theTextBox.ReloadScript(theText);
-                theTextBox.currentLine = startLine;
-                theTextBox.endAtLine = endLine;
-                theTextBox.EnableTextBox(); 
+                if (pickupController.numberOfPickups == PlayerPrefs.GetInt(pickupController.levelName))
+                {
+                    theTextBox.isActive = true;
+                    theTextBox.ReloadScript(winText);
+                    theTextBox.currentLine = winStartLine;
+                    theTextBox.endAtLine = winEndLine;
+                    theTextBox.EnableTextBox();
+                }
+                else
+                {
+                    theTextBox.isActive = true;
+                    theTextBox.ReloadScript(theText);
+                    theTextBox.currentLine = startLine;
+                    theTextBox.endAtLine = endLine;
+                    theTextBox.EnableTextBox();
+                }
+
             }
 
             if (destroyWhenActivated)
@@ -60,7 +89,7 @@ public class ActivateText : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-       if (other.name == "Player")
+        if (other.name == "Player")
         {
             if (requireButtonPress)
             {
@@ -69,12 +98,12 @@ public class ActivateText : MonoBehaviour
             }
             else
             {
-            theTextBox.ReloadScript(theText);
-            theTextBox.currentLine = startLine;
-            theTextBox.endAtLine = endLine;
-            theTextBox.EnableTextBox();
+                theTextBox.ReloadScript(theText);
+                theTextBox.currentLine = startLine;
+                theTextBox.endAtLine = endLine;
+                theTextBox.EnableTextBox();
             }
-            
+
 
             if (destroyWhenActivated)
             {
@@ -84,7 +113,7 @@ public class ActivateText : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        
+
         if (other.name == "Player")
         {
             waitForPress = false;
