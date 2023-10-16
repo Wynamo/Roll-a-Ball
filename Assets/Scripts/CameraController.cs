@@ -1,5 +1,7 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
@@ -8,13 +10,13 @@ public class CameraController : MonoBehaviour
 
     private Vector3 offset;
 
-    // Start is called before the first frame update
+    //start is called before the first frame update
     void Start()
     {
         offset = transform.position - player.transform.position;
     }
 
-    // Update is called once per frame
+    // update is called once per frame
     void LateUpdate()
     {
         transform.position = player.transform.position + offset;
