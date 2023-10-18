@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 0;
     public float maxSpeed = 15;
 
+    public CameraController cameraController;
     private Rigidbody rb;
     private float movementX;
     private float movementY;
@@ -35,7 +36,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = rb.velocity.normalized * maxSpeed;
         }
-        Vector3 movement = new Vector3(movementX, 0.0f, movementY);
+        Vector3 movement = Quaternion.Euler(0, cameraController.currentRotation, 0) * new Vector3(movementX, 0.0f, movementY);
        
         rb.AddForce(movement * speed);
         

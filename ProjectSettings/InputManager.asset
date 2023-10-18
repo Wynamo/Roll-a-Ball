@@ -457,8 +457,8 @@ InputManager:
     m_Name: CameraHorizontal
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: n
-    positiveButton: m
+    negativeButton: ','
+    positiveButton: .
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
