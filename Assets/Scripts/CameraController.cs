@@ -1,24 +1,30 @@
-using Cinemachine;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public GameObject player;
+    public Transform target; // Reference to the object you want to follow and rotate around
+    public float rotationSpeed;
+    public float distance = 5.0f; // Distance from the object
+    public float height = 2.0f; // Height above the object
+    private float currentRotation;
 
-    private Vector3 offset;
-
-    //start is called before the first frame update
-    void Start()
+    void Update()
     {
-        offset = transform.position - player.transform.position;
-    }
+        float rotationInput = Input.GetAxis("CameraHorizontal"); // Assumes "n" and "m" keys correspond to horizontal input
 
-    // update is called once per frame
-    void LateUpdate()
-    {
-        transform.position = player.transform.position + offset;
+        // Update the camera rotation based on input
+        currentRotation += rotationInput * rotationSpeed * Time.deltaTime;
+
+        // Calculate the position offset
+        Vector3 offset = Quaternion.Euler(0, currentRotation, 0) * new Vector3(0, height, -distance);
+        Vector3 targetPosition = target.position + offset;
+
+        // Update the camera position to follow the object
+        transform.position = targetPosition;
+        transform.LookAt(target); // Make the camera look at the object
     }
 }
+
+
+
+
