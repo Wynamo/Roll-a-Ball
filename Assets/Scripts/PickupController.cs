@@ -41,7 +41,7 @@ public class PickupController : MonoBehaviour
 
     void SetCountText()
     {
-        countText.text = "Count: " + count.ToString();
+        countText.text = "x " + count.ToString();
         if (PlayerPrefs.GetInt(levelName) >= 1)
         {
             if (winOnTalk)

@@ -39,7 +39,7 @@ public class Lives : MonoBehaviour
 
     void SetLivesText()
     {
-        livesText.text = "Lives: " + currentLives.ToString();
+        livesText.text = "x " + currentLives.ToString();
         if (currentLives <= 0)
         {
             gameOverTextObject.SetActive(true);

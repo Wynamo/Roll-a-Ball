@@ -376,6 +376,10 @@ PrefabInstance:
       propertyPath: gameOverTextObject
       value: 
       objectReference: {fileID: 1030124465}
+    - target: {fileID: 6773480514151726270, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
+      propertyPath: cameraController
+      value: 
+      objectReference: {fileID: 1761578927}
     - target: {fileID: 7896064583089081060, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
       propertyPath: m_Camera
       value: 
@@ -385,6 +389,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
+--- !u!4 &188189991 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4007381146204224491, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
+  m_PrefabInstance: {fileID: 188189990}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &225041347
 GameObject:
   m_ObjectHideFlags: 0
@@ -13111,17 +13120,12 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!1 &1436646916 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 500051348141700282, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
-  m_PrefabInstance: {fileID: 188189990}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1436646920 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6773480514151726270, guid: 86ec660773cff9342bd3c81e22512da1, type: 3}
   m_PrefabInstance: {fileID: 188189990}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1436646916}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 385e60100a259b64ebbc731a4c410048, type: 3}
@@ -53706,7 +53710,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56aa0c12e93731e43ab2245f3a1ac8d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1436646916}
+  player: {fileID: 188189991}
+  rotationSpeed: 75
+  distance: 8
+  height: 3
+  currentRotation: 0
 --- !u!114 &1793475308 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3346039655965715339, guid: 4fb2963831ff33a418c4e3f219ec12cb, type: 3}
@@ -59758,7 +59766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3177540106052085726, guid: 246704fd46c7ed44190266a49b5616b0, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 300
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 3177540106052085726, guid: 246704fd46c7ed44190266a49b5616b0, type: 3}
       propertyPath: m_SizeDelta.y
