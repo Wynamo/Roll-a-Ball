@@ -63,7 +63,7 @@ public class ActivateLevel : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
 
-        if (other.name == "Player")
+        if (other.name == "OrboExpo2")
         {
             waitForPress = false;
         }

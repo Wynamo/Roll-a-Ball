@@ -255,9 +255,10 @@ MonoBehaviour:
   levelName: Level 1
   levelNameCompletedKey: level1completed
   winOnTalk: 0
-  continueButton: {fileID: 0}
-  countText: {fileID: 0}
-  winTextObject: {fileID: 0}
+  pickupsLeftText: {fileID: 635628952562824521, guid: 9cd45f5258516ce45a4e5961e74d5825, type: 3}
+  continueButton: {fileID: 2051175814295419000, guid: 8c04aa041f8da6146a1727a28eac37f7, type: 3}
+  countText: {fileID: 7142743465089360626, guid: 06d7ee8d631cf9e4aa30cbcb880346eb, type: 3}
+  winTextObject: {fileID: 8022299356659378640, guid: 246704fd46c7ed44190266a49b5616b0, type: 3}
 --- !u!114 &5021130388671678817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,10 +272,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingLives: 3
-  restartButton: {fileID: 0}
-  quitButton: {fileID: 0}
-  gameOverTextObject: {fileID: 0}
-  livesText: {fileID: 0}
+  restartButton: {fileID: 7223647964387823950, guid: 3898343a43ec2bf4f93fe5a17559f447, type: 3}
+  quitButton: {fileID: 2187460843127929825, guid: c13367d47c83d0342ae585137970aa4e, type: 3}
+  gameOverTextObject: {fileID: 3695033576238570924, guid: 7771e629d18c77747819332f425fdf04, type: 3}
+  livesText: {fileID: 4776807141921401996, guid: 734678bc2efca7d428707557712cfd96, type: 3}
 --- !u!54 &6300706646955021723
 Rigidbody:
   m_ObjectHideFlags: 0

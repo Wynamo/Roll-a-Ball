@@ -16,6 +16,7 @@ public class PickupController : MonoBehaviour
 
     public bool winOnTalk;
 
+    public TextMeshProUGUI pickupsLeftText;
     public GameObject continueButton;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
@@ -36,13 +37,14 @@ public class PickupController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        int pickupsLeft = numberOfPickups - count;
+        pickupsLeftText.text = "Pickups Left: " + pickupsLeft.ToString();
     }
 
     void SetCountText()
     {
         countText.text = "x " + count.ToString();
-        if (PlayerPrefs.GetInt(levelName) >= 1)
+        if (PlayerPrefs.GetInt(levelName) >= numberOfPickups)
         {
             if (winOnTalk)
             {
