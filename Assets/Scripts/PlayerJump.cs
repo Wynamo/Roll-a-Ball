@@ -9,6 +9,7 @@ public class PlayerJump : MonoBehaviour
     public float jumpForce = 10f;
     public bool isGrounded;
     public float gravity = -9.81f;
+    public float distance = 10f;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,7 @@ public class PlayerJump : MonoBehaviour
     {
  
         // Gets input and calls jump method
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space))// && isGrounded)
         {
             Jump();
         }
@@ -32,7 +33,7 @@ public class PlayerJump : MonoBehaviour
     {
         Vector3 origin = new Vector3(transform.position.x, transform.position.y - (transform.localScale.y * .5f), transform.position.z);
         Vector3 direction = transform.TransformDirection(Vector3.down);
-        float distance = .75f;
+        //float distance = 10f;
 
 
 
