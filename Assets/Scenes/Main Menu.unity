@@ -800,8 +800,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Orbo's Adventure
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 64fd7a9ac5d21b6488d1cabb0eb0cf48, type: 2}
-  m_sharedMaterial: {fileID: 7048219727771247835, guid: 64fd7a9ac5d21b6488d1cabb0eb0cf48, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 76bfadd064c913944b49f8596e0cbaa6, type: 2}
+  m_sharedMaterial: {fileID: 8001852377538951731, guid: 76bfadd064c913944b49f8596e0cbaa6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -831,7 +831,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 16
+  m_fontStyle: 33
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535

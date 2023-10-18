@@ -22,15 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 61d0a92769da06d43b03effb8d19f070, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 354
+      value: 265.42
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 61d0a92769da06d43b03effb8d19f070, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.638
+      value: 0.525
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 61d0a92769da06d43b03effb8d19f070, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 132
+      value: 202.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 61d0a92769da06d43b03effb8d19f070, type: 3}
       propertyPath: m_LocalRotation.w
@@ -104,6 +104,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ec11278d25fe6ae44902dc7a75f90431, type: 2}
+    - target: {fileID: -264430861247414160, guid: 61d0a92769da06d43b03effb8d19f070, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d66bd3094cc3cd48ab0b0baacdac2b3, type: 2}
     - target: {fileID: 519234131937799014, guid: 61d0a92769da06d43b03effb8d19f070, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -238,7 +242,7 @@ MonoBehaviour:
   jumpForce: 5
   isGrounded: 0
   gravity: -9.81
-  distance: 50.05
+  distance: 50.25
 --- !u!114 &5380622639215889505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,12 +257,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberOfPickups: 0
   levelName: Level 1
-  levelNameCompletedKey: level1completed
+  levelNameCompletedKey: level1complete
   winOnTalk: 0
-  pickupsLeftText: {fileID: 635628952562824521, guid: 9cd45f5258516ce45a4e5961e74d5825, type: 3}
-  continueButton: {fileID: 2051175814295419000, guid: 8c04aa041f8da6146a1727a28eac37f7, type: 3}
-  countText: {fileID: 7142743465089360626, guid: 06d7ee8d631cf9e4aa30cbcb880346eb, type: 3}
-  winTextObject: {fileID: 8022299356659378640, guid: 246704fd46c7ed44190266a49b5616b0, type: 3}
+  pickupsLeftText: {fileID: 0}
+  continueButton: {fileID: 0}
+  countText: {fileID: 0}
+  winTextObject: {fileID: 0}
 --- !u!114 &5021130388671678817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,10 +276,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingLives: 3
-  restartButton: {fileID: 7223647964387823950, guid: 3898343a43ec2bf4f93fe5a17559f447, type: 3}
-  quitButton: {fileID: 2187460843127929825, guid: c13367d47c83d0342ae585137970aa4e, type: 3}
-  gameOverTextObject: {fileID: 3695033576238570924, guid: 7771e629d18c77747819332f425fdf04, type: 3}
-  livesText: {fileID: 4776807141921401996, guid: 734678bc2efca7d428707557712cfd96, type: 3}
+  restartButton: {fileID: 0}
+  quitButton: {fileID: 0}
+  gameOverTextObject: {fileID: 0}
+  livesText: {fileID: 0}
 --- !u!54 &6300706646955021723
 Rigidbody:
   m_ObjectHideFlags: 0
