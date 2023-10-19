@@ -73886,6 +73886,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1708212680}
     - target: {fileID: 5380622639215889505, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
+      propertyPath: winOnTalk
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5380622639215889505, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
       propertyPath: winTextObject
       value: 
       objectReference: {fileID: 1765513689}
