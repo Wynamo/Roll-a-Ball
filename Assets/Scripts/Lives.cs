@@ -7,7 +7,7 @@ public class Lives : MonoBehaviour
 {
 
     private int currentLives;
-    public int startingLives = 3;
+    //public int startingLives = 3;
 
     private Vector3 initialPosition;
     
@@ -24,7 +24,7 @@ public class Lives : MonoBehaviour
         Time.timeScale = 1f;
         quitButton.SetActive(false);
         gameOverTextObject.SetActive(false);
-        currentLives = startingLives;
+        currentLives = PlayerPrefs.GetInt("lives");
         SetLivesText();
         initialPosition = transform.position;
         restartButton.SetActive(false);
@@ -35,6 +35,11 @@ public class Lives : MonoBehaviour
         currentLives--;
         SetLivesText();
         transform.position = initialPosition;
+    }
+
+    private void Update()
+    {
+        PlayerPrefs.SetInt("lives", currentLives);
     }
 
     void SetLivesText()

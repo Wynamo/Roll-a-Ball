@@ -24,6 +24,7 @@ public class LevelManager : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         PlayerPrefs.SetString("newGame", "true");
+        PlayerPrefs.SetInt("lives", 3);
         SceneManager.LoadScene(sceneName);
     }
 }
