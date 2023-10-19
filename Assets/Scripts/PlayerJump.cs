@@ -33,7 +33,6 @@ public class PlayerJump : MonoBehaviour
     {
         Debug.DrawRay(transform.position, Vector3.down * distance, Color.red);
 
-
         if (Physics.Raycast((transform.position), Vector3.down * distance, out RaycastHit hit, distance))
         {
             isGrounded = true;
