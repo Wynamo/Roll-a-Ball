@@ -21,7 +21,7 @@ public class PlayerJump : MonoBehaviour
     {
  
         // Gets input and calls jump method
-        if (Input.GetKeyDown(KeyCode.Space))// && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
         }
@@ -31,15 +31,11 @@ public class PlayerJump : MonoBehaviour
 
     private void CheckGround()
     {
-        Vector3 origin = new Vector3(transform.position.x, transform.position.y - (transform.localScale.y * .5f), transform.position.z);
-        Vector3 direction = transform.TransformDirection(Vector3.down);
-        //float distance = 10f;
+        Debug.DrawRay(transform.position, Vector3.down * distance, Color.red);
 
 
-
-        if (Physics.Raycast(origin, direction, out RaycastHit hit, distance))
+        if (Physics.Raycast((transform.position), Vector3.down * distance, out RaycastHit hit, distance))
         {
-            Debug.DrawRay(origin, direction * distance, Color.red);
             isGrounded = true;
         }
         else
