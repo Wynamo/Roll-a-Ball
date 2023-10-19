@@ -36,7 +36,7 @@ public class PlayerJump : MonoBehaviour
         //float distance = 10f;
 
 
-
+        Debug.DrawRay(origin, direction * distance, Color.red);
         if (Physics.Raycast(origin, direction, out RaycastHit hit, distance))
         {
             Debug.DrawRay(origin, direction * distance, Color.red);
