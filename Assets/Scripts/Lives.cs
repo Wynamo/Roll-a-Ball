@@ -50,6 +50,8 @@ public class Lives : MonoBehaviour
             gameOverTextObject.SetActive(true);
             restartButton.SetActive(true);
             quitButton.SetActive(true);
+            PlayerPrefs.SetInt("lives", 3);
+            currentLives = PlayerPrefs.GetInt("lives");
             Time.timeScale = 0f;
         }
     }

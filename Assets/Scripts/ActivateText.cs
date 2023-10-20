@@ -60,7 +60,7 @@ public class ActivateText : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-       if (other.name == "Player")
+       if (other.name == "OrboExpo2")
         {
             if (requireButtonPress)
             {
@@ -85,7 +85,7 @@ public class ActivateText : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         
-        if (other.name == "Player")
+        if (other.name == "OrboExpo2")
         {
             waitForPress = false;
         }
