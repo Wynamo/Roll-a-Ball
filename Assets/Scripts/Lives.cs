@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Lives : MonoBehaviour
@@ -11,6 +12,10 @@ public class Lives : MonoBehaviour
 
     private Vector3 initialPosition;
     
+    public float distance;
+
+    public bool isAbove;
+
     public GameObject restartButton;
 
     public GameObject quitButton;
@@ -40,7 +45,23 @@ public class Lives : MonoBehaviour
     private void Update()
     {
         PlayerPrefs.SetInt("lives", currentLives);
+        //CheckIsAbove();
     }
+
+    //public void CheckIsAbove()
+    //{
+    //    if (Physics.Raycast((transform.position), Vector3.down * distance, out RaycastHit hit, distance))
+    //    {
+    //        if (hit.collider.CompareTag("Enemy"))
+    //        {
+    //            isAbove = true;
+    //        }
+    //        else
+    //        {
+    //            isAbove = false;
+    //        }
+    //    }
+    //}
 
     void SetLivesText()
     {
@@ -62,7 +83,24 @@ public class Lives : MonoBehaviour
         {
             OnDeath();
         }
-    }
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            OnDeath();
+        }
+        if (collision.gameObject.CompareTag("EnemyHead"))
+        {
+            collision.gameObject.SetActive(false);
+            collision.gameObject.transform.parent.gameObject.SetActive(false);
+        }
+            //if (transform.position.y > collision.gameObject.transform.position.y)
+            //{
+            //    collision.gameObject.SetActive(false);
+            //}
+            //else
+            //{
+            //    OnDeath();
+            //}
+     }
 
     private void OnTriggerEnter(Collider other)
     {
