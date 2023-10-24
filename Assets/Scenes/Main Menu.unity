@@ -454,23 +454,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 268816891}
   m_CullTransparentMesh: 1
---- !u!1 &277678456 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5960425341060575277, guid: 7302510ee24462a4c923624654285a2a, type: 3}
-  m_PrefabInstance: {fileID: 2053669034}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &277678457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277678456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a7254a762dfa1143ac9f737a002b6a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &352784526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1584,7 +1567,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 277678457}
+      - m_Target: {fileID: 2053669035}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 5
@@ -1830,7 +1813,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 277678457}
+      - m_Target: {fileID: 2053669035}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
         m_MethodName: QuitToDesktop
         m_Mode: 1
@@ -2022,6 +2005,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3193362399768661600, guid: 7302510ee24462a4c923624654285a2a, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 594fd554a1a90104ea3c84cbd5a4b394, type: 3}
+    - target: {fileID: 3193362399768661600, guid: 7302510ee24462a4c923624654285a2a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3193362399768661600, guid: 7302510ee24462a4c923624654285a2a, type: 3}
+      propertyPath: BypassListenerEffects
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5960425341060575277, guid: 7302510ee24462a4c923624654285a2a, type: 3}
       propertyPath: m_Name
       value: LevelManager
@@ -2066,20 +2061,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8885496989521720236, guid: 7302510ee24462a4c923624654285a2a, type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 594fd554a1a90104ea3c84cbd5a4b394, type: 3}
+    - target: {fileID: 8885496989521720236, guid: 7302510ee24462a4c923624654285a2a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5960425341060575277, guid: 7302510ee24462a4c923624654285a2a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 277678457}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7302510ee24462a4c923624654285a2a, type: 3}
 --- !u!114 &2053669035 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8885496989521720236, guid: 7302510ee24462a4c923624654285a2a, type: 3}
   m_PrefabInstance: {fileID: 2053669034}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277678456}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a7254a762dfa1143ac9f737a002b6a3, type: 3}
@@ -2092,6 +2092,6 @@ SceneRoots:
   - {fileID: 352784529}
   - {fileID: 773344326}
   - {fileID: 508836094}
-  - {fileID: 1606210797}
   - {fileID: 1351708422}
   - {fileID: 2053669034}
+  - {fileID: 1606210797}
