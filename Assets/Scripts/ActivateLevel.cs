@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ActivateLevel : MonoBehaviour
 {
     public GameObject nextLevel;
+    public GameObject nextLevelPath;
 
     private bool waitForPress;
 
@@ -89,6 +90,7 @@ public class ActivateLevel : MonoBehaviour
     public void ActivateNextLevel()
     {
         nextLevel.SetActive(true);
+        nextLevelPath.SetActive(true);
     }
 
     public Vector3 SetPlayerPosition()
