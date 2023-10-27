@@ -10,6 +10,9 @@ public class PickupController : MonoBehaviour
 {
     public int numberOfPickups;
 
+    public AudioSource audioSource;
+    public AudioClip clip;
+
     public string levelName;
 
     public string levelNameCompletedKey;
@@ -24,6 +27,7 @@ public class PickupController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GetComponent<AudioSource>();
         PlayerPrefs.SetInt(levelName, 0);
         numberOfPickups = CountPickups();
         Time.timeScale = 1f;
@@ -61,6 +65,7 @@ public class PickupController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PickUp"))
         {
+            audioSource.PlayOneShot(clip);
             other.gameObject.SetActive(false);
             count = count + 1;
             PlayerPrefs.SetInt(levelName, PlayerPrefs.GetInt(levelName) + 1);
