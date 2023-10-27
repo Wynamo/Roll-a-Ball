@@ -1,0 +1,528 @@
+fileFormatVersion: 2
+guid: 9dd5eb199b3066f41b0eb17df7080bce
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: QuarterHearFinalAnimationt_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: -0.7037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 184
+      width: 30
+      height: 27
+    spriteID: bc3986e62a380af459487840e81fefed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 184}
+  - name: QuarterHearFinalAnimationt_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -0.7037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 219
+      width: 30
+      height: 27
+    spriteID: 097a892cbf1cb17499df984a7e24770f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 219}
+  - name: QuarterHearFinalAnimationt_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 200
+      width: 30
+      height: 28
+    spriteID: 4ae4c0bee12bd854ba0b4a4726dbe8de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 200}
+  - name: QuarterHearFinalAnimationt_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 4
+      width: 30
+      height: 28
+    spriteID: b35fa4ab905e8b046ac63cbb00dcb839
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 4}
+  - name: QuarterHearFinalAnimationt_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 40
+      width: 30
+      height: 28
+    spriteID: c0abe38e047f4ed40a83b4831e025e71
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 40}
+  - name: QuarterHearFinalAnimationt_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 76
+      width: 30
+      height: 28
+    spriteID: 7c32d98d0be84934f872bd91fd920f59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 76}
+  - name: QuarterHearFinalAnimationt_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 112
+      width: 30
+      height: 28
+    spriteID: ccfda3a6d92c6b34b87c5aae9957dcbb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 112}
+  - name: QuarterHearFinalAnimationt_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 148
+      width: 30
+      height: 28
+    spriteID: 268d39d4de6bb5343a67b42746c08bfd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 148}
+  - name: QuarterHearFinalAnimationt_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: -0.5862069}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 163
+      width: 30
+      height: 29
+    spriteID: 95f0aa1ee2843f5428af855ddd01fccb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 163}
+  - name: QuarterHearFinalAnimationt_Frame_9
+    originalName: 
+    pivot: {x: 0.54545456, y: -0.48387095}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 85
+      width: 33
+      height: 31
+    spriteID: 3a221d776a86bb840bd87a40937b01c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 85}
+  - name: QuarterHearFinalAnimationt_Frame_10
+    originalName: 
+    pivot: {x: 0.54545456, y: -0.48387095}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 124
+      width: 33
+      height: 31
+    spriteID: ab0438f492fad5b4b83c70568bf8e4ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 124}
+  - name: QuarterHearFinalAnimationt_Frame_11
+    originalName: 
+    pivot: {x: 0.5588235, y: -0.4375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 45
+      width: 34
+      height: 32
+    spriteID: 09603831b22aa624ea45179194e56afc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 45}
+  - name: QuarterHearFinalAnimationt_Frame_12
+    originalName: 
+    pivot: {x: 0.5588235, y: -0.3939394}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 34
+      height: 33
+    spriteID: 68000ace824ecf1488da60f2245985d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: QuarterHearFinalAnimationt_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: -0.7037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 4
+      width: 30
+      height: 27
+    spriteID: 063922ba62ede184989be676a4cca3ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1484559136
+    name: QuarterHearFinalAnimationt
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: QuarterHearFinalAnimationt_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 17
+        y: 19
+        width: 30
+        height: 27
+      spriteId: bc3986e62a380af459487840e81fefed
+    - name: QuarterHearFinalAnimationt_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 17
+        y: 19
+        width: 30
+        height: 27
+      spriteId: 097a892cbf1cb17499df984a7e24770f
+    - name: QuarterHearFinalAnimationt_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 17
+        y: 18
+        width: 30
+        height: 28
+      spriteId: 4ae4c0bee12bd854ba0b4a4726dbe8de
+    - name: QuarterHearFinalAnimationt_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 17
+        y: 18
+        width: 30
+        height: 28
+      spriteId: b35fa4ab905e8b046ac63cbb00dcb839
+    - name: QuarterHearFinalAnimationt_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 17
+        y: 18
+        width: 30
+        height: 28
+      spriteId: c0abe38e047f4ed40a83b4831e025e71
+    - name: QuarterHearFinalAnimationt_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 17
+        y: 18
+        width: 30
+        height: 28
+      spriteId: 7c32d98d0be84934f872bd91fd920f59
+    - name: QuarterHearFinalAnimationt_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 17
+        y: 18
+        width: 30
+        height: 28
+      spriteId: ccfda3a6d92c6b34b87c5aae9957dcbb
+    - name: QuarterHearFinalAnimationt_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 17
+        y: 18
+        width: 30
+        height: 28
+      spriteId: 268d39d4de6bb5343a67b42746c08bfd
+    - name: QuarterHearFinalAnimationt_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 17
+        y: 17
+        width: 30
+        height: 29
+      spriteId: 95f0aa1ee2843f5428af855ddd01fccb
+    - name: QuarterHearFinalAnimationt_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 14
+        y: 15
+        width: 33
+        height: 31
+      spriteId: 3a221d776a86bb840bd87a40937b01c7
+    - name: QuarterHearFinalAnimationt_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 14
+        y: 15
+        width: 33
+        height: 31
+      spriteId: ab0438f492fad5b4b83c70568bf8e4ff
+    - name: QuarterHearFinalAnimationt_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 13
+        y: 14
+        width: 34
+        height: 32
+      spriteId: 09603831b22aa624ea45179194e56afc
+    - name: QuarterHearFinalAnimationt_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 13
+        y: 13
+        width: 34
+        height: 33
+      spriteId: 68000ace824ecf1488da60f2245985d3
+    - name: QuarterHearFinalAnimationt_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 17
+        y: 19
+        width: 30
+        height: 27
+      spriteId: 063922ba62ede184989be676a4cca3ae
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 64}

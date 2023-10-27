@@ -1,0 +1,528 @@
+fileFormatVersion: 2
+guid: b1b97eb712c758f438cb4b131a2470c8
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: HalfHeartFinalAnimation_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: -0.7037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 184
+      width: 30
+      height: 27
+    spriteID: 6dfbedbb73b1ba449bea90cbdf761505
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 184}
+  - name: HalfHeartFinalAnimation_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -0.7037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 219
+      width: 30
+      height: 27
+    spriteID: d41226ef2d6803841beb09025d831d87
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 219}
+  - name: HalfHeartFinalAnimation_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 204
+      width: 30
+      height: 28
+    spriteID: 011ed41d6b72ff34b974d2ac218efeb4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 204}
+  - name: HalfHeartFinalAnimation_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 4
+      width: 30
+      height: 28
+    spriteID: fc2537bb8afd17b4fb11778d968120d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 4}
+  - name: HalfHeartFinalAnimation_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 40
+      width: 30
+      height: 28
+    spriteID: 8beece34c1be30d4e9d410bc8e048acc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 40}
+  - name: HalfHeartFinalAnimation_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 76
+      width: 30
+      height: 28
+    spriteID: 9f48058182290e5488e66986087e47f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 76}
+  - name: HalfHeartFinalAnimation_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 112
+      width: 30
+      height: 28
+    spriteID: 104232a021adb884ebb209f0eca54e3d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 112}
+  - name: HalfHeartFinalAnimation_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 148
+      width: 30
+      height: 28
+    spriteID: fbe80e335c7bf0d419a6ea1a0a50f581
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 148}
+  - name: HalfHeartFinalAnimation_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: -0.5862069}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 167
+      width: 30
+      height: 29
+    spriteID: bf32cd775f9986a45b2df21411a44754
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 167}
+  - name: HalfHeartFinalAnimation_Frame_9
+    originalName: 
+    pivot: {x: 0.46875, y: -0.4375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 127
+      width: 32
+      height: 32
+    spriteID: a9e51969dae08b147b033c337817a0a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 127}
+  - name: HalfHeartFinalAnimation_Frame_10
+    originalName: 
+    pivot: {x: 0.45454547, y: -0.3939394}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 86
+      width: 33
+      height: 33
+    spriteID: 234c6d5549773c64f85165b36993d1a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 86}
+  - name: HalfHeartFinalAnimation_Frame_11
+    originalName: 
+    pivot: {x: 0.44117647, y: -0.3939394}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 45
+      width: 34
+      height: 33
+    spriteID: 162bd884f81950246a47696fbe7fc47a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 45}
+  - name: HalfHeartFinalAnimation_Frame_12
+    originalName: 
+    pivot: {x: 0.42857143, y: -0.3939394}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 35
+      height: 33
+    spriteID: 9b5af8ced1649174a815b5f3d46d40ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: HalfHeartFinalAnimation_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: -0.7037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 4
+      width: 30
+      height: 27
+    spriteID: c093b098db38e7e498e6f0648e1ebd80
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1430716827
+    name: HalfHeartFinalAnimation
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: HalfHeartFinalAnimation_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 17
+        y: 19
+        width: 30
+        height: 27
+      spriteId: 6dfbedbb73b1ba449bea90cbdf761505
+    - name: HalfHeartFinalAnimation_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 17
+        y: 19
+        width: 30
+        height: 27
+      spriteId: d41226ef2d6803841beb09025d831d87
+    - name: HalfHeartFinalAnimation_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 17
+        y: 18
+        width: 30
+        height: 28
+      spriteId: 011ed41d6b72ff34b974d2ac218efeb4
+    - name: HalfHeartFinalAnimation_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 17
+        y: 18
+        width: 30
+        height: 28
+      spriteId: fc2537bb8afd17b4fb11778d968120d3
+    - name: HalfHeartFinalAnimation_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 17
+        y: 18
+        width: 30
+        height: 28
+      spriteId: 8beece34c1be30d4e9d410bc8e048acc
+    - name: HalfHeartFinalAnimation_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 17
+        y: 18
+        width: 30
+        height: 28
+      spriteId: 9f48058182290e5488e66986087e47f3
+    - name: HalfHeartFinalAnimation_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 17
+        y: 18
+        width: 30
+        height: 28
+      spriteId: 104232a021adb884ebb209f0eca54e3d
+    - name: HalfHeartFinalAnimation_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 17
+        y: 18
+        width: 30
+        height: 28
+      spriteId: fbe80e335c7bf0d419a6ea1a0a50f581
+    - name: HalfHeartFinalAnimation_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 17
+        y: 17
+        width: 30
+        height: 29
+      spriteId: bf32cd775f9986a45b2df21411a44754
+    - name: HalfHeartFinalAnimation_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 17
+        y: 14
+        width: 32
+        height: 32
+      spriteId: a9e51969dae08b147b033c337817a0a1
+    - name: HalfHeartFinalAnimation_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 17
+        y: 13
+        width: 33
+        height: 33
+      spriteId: 234c6d5549773c64f85165b36993d1a4
+    - name: HalfHeartFinalAnimation_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 17
+        y: 13
+        width: 34
+        height: 33
+      spriteId: 162bd884f81950246a47696fbe7fc47a
+    - name: HalfHeartFinalAnimation_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 17
+        y: 13
+        width: 35
+        height: 33
+      spriteId: 9b5af8ced1649174a815b5f3d46d40ef
+    - name: HalfHeartFinalAnimation_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 17
+        y: 19
+        width: 30
+        height: 27
+      spriteId: c093b098db38e7e498e6f0648e1ebd80
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 64}

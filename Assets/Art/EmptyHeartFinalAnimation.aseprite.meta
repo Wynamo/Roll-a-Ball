@@ -1,0 +1,528 @@
+fileFormatVersion: 2
+guid: 5cd070bb62f87ba4380016230e14f7e8
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: EmptyHeartFinalAnimation_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: -0.7037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 187
+      width: 30
+      height: 27
+    spriteID: 05762de5ffb4b1d4eaffc19598a525cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 187}
+  - name: EmptyHeartFinalAnimation_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -0.7037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 222
+      width: 30
+      height: 27
+    spriteID: db79d038f81c1804db723cb8ee01bd2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 222}
+  - name: EmptyHeartFinalAnimation_Frame_2
+    originalName: 
+    pivot: {x: 0.516129, y: -0.67857146}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 159
+      width: 31
+      height: 28
+    spriteID: 87b602b1a9a26964a88b8e363b8ff1d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 159}
+  - name: EmptyHeartFinalAnimation_Frame_3
+    originalName: 
+    pivot: {x: 0.516129, y: -0.67857146}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 195
+      width: 31
+      height: 28
+    spriteID: 0aa81e9e6446f804b90de626c32cdabd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 195}
+  - name: EmptyHeartFinalAnimation_Frame_4
+    originalName: 
+    pivot: {x: 0.516129, y: -0.67857146}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 43
+      width: 31
+      height: 28
+    spriteID: b2a322f08e96e014aaea7ebc3f19c8e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 43}
+  - name: EmptyHeartFinalAnimation_Frame_5
+    originalName: 
+    pivot: {x: 0.516129, y: -0.67857146}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 79
+      width: 31
+      height: 28
+    spriteID: a5623c69b00e346468fc58d7f0803ccd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 79}
+  - name: EmptyHeartFinalAnimation_Frame_6
+    originalName: 
+    pivot: {x: 0.516129, y: -0.67857146}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 115
+      width: 31
+      height: 28
+    spriteID: 83b27e3224a29964ba80ce6478538ebd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 115}
+  - name: EmptyHeartFinalAnimation_Frame_7
+    originalName: 
+    pivot: {x: 0.516129, y: -0.67857146}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 151
+      width: 31
+      height: 28
+    spriteID: da6cfd03114c6144eb731fb6bb684b4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 151}
+  - name: EmptyHeartFinalAnimation_Frame_8
+    originalName: 
+    pivot: {x: 0.53125, y: -0.67857146}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 123
+      width: 32
+      height: 28
+    spriteID: d13fdd7410fd2e64ba1379e516b310e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 123}
+  - name: EmptyHeartFinalAnimation_Frame_9
+    originalName: 
+    pivot: {x: 0.5588235, y: -0.61290324}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 84
+      width: 34
+      height: 31
+    spriteID: 662e19dee3d674e40b75c7952ff840da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 84}
+  - name: EmptyHeartFinalAnimation_Frame_10
+    originalName: 
+    pivot: {x: 0.5714286, y: -0.59375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 44
+      width: 35
+      height: 32
+    spriteID: 5f578e1a46eb9194d9cc6a47ea9662ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 44}
+  - name: EmptyHeartFinalAnimation_Frame_11
+    originalName: 
+    pivot: {x: 0.5833333, y: -0.59375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 36
+      height: 32
+    spriteID: c75b73fd59014cc4895aacd8f8ffe216
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: EmptyHeartFinalAnimation_Frame_12
+    originalName: 
+    pivot: {x: 0.5945946, y: -0.61290324}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 4
+      width: 37
+      height: 31
+    spriteID: 1e6fc389c1824874eab4b4f8819bf172
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 4}
+  - name: EmptyHeartFinalAnimation_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: -0.7037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 93
+      y: 4
+      width: 30
+      height: 27
+    spriteID: b7afb4d483fe7824c99a6586bfd92c0d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 93, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1243964545
+    name: EmptyHeartFinalAnimation
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: EmptyHeartFinalAnimation_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 17
+        y: 19
+        width: 30
+        height: 27
+      spriteId: 05762de5ffb4b1d4eaffc19598a525cc
+    - name: EmptyHeartFinalAnimation_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 17
+        y: 19
+        width: 30
+        height: 27
+      spriteId: db79d038f81c1804db723cb8ee01bd2a
+    - name: EmptyHeartFinalAnimation_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 16
+        y: 19
+        width: 31
+        height: 28
+      spriteId: 87b602b1a9a26964a88b8e363b8ff1d9
+    - name: EmptyHeartFinalAnimation_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 16
+        y: 19
+        width: 31
+        height: 28
+      spriteId: 0aa81e9e6446f804b90de626c32cdabd
+    - name: EmptyHeartFinalAnimation_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 16
+        y: 19
+        width: 31
+        height: 28
+      spriteId: b2a322f08e96e014aaea7ebc3f19c8e8
+    - name: EmptyHeartFinalAnimation_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 16
+        y: 19
+        width: 31
+        height: 28
+      spriteId: a5623c69b00e346468fc58d7f0803ccd
+    - name: EmptyHeartFinalAnimation_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 16
+        y: 19
+        width: 31
+        height: 28
+      spriteId: 83b27e3224a29964ba80ce6478538ebd
+    - name: EmptyHeartFinalAnimation_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 16
+        y: 19
+        width: 31
+        height: 28
+      spriteId: da6cfd03114c6144eb731fb6bb684b4b
+    - name: EmptyHeartFinalAnimation_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 15
+        y: 19
+        width: 32
+        height: 28
+      spriteId: d13fdd7410fd2e64ba1379e516b310e9
+    - name: EmptyHeartFinalAnimation_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 13
+        y: 19
+        width: 34
+        height: 31
+      spriteId: 662e19dee3d674e40b75c7952ff840da
+    - name: EmptyHeartFinalAnimation_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 12
+        y: 19
+        width: 35
+        height: 32
+      spriteId: 5f578e1a46eb9194d9cc6a47ea9662ed
+    - name: EmptyHeartFinalAnimation_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 11
+        y: 19
+        width: 36
+        height: 32
+      spriteId: c75b73fd59014cc4895aacd8f8ffe216
+    - name: EmptyHeartFinalAnimation_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 10
+        y: 19
+        width: 37
+        height: 31
+      spriteId: 1e6fc389c1824874eab4b4f8819bf172
+    - name: EmptyHeartFinalAnimation_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 17
+        y: 19
+        width: 30
+        height: 27
+      spriteId: b7afb4d483fe7824c99a6586bfd92c0d
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 64}
