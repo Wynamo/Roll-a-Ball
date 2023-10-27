@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ActivateText : MonoBehaviour
 {
+    public GameObject buttonPrompt;
 
     public TextAsset theText;
 
@@ -23,6 +25,7 @@ public class ActivateText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        buttonPrompt.SetActive(false);
         theTextBox = FindObjectOfType<TextBoxManager>();
 
         if (theText != null)
@@ -62,6 +65,7 @@ public class ActivateText : MonoBehaviour
     {
        if (other.name == "OrboExpo2")
         {
+            buttonPrompt.SetActive(true);
             if (requireButtonPress)
             {
                 waitForPress = true;
@@ -84,7 +88,7 @@ public class ActivateText : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        
+        buttonPrompt.SetActive(false);
         if (other.name == "OrboExpo2")
         {
             waitForPress = false;
