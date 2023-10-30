@@ -136,7 +136,6 @@ public class TextBoxManager : MonoBehaviour
     {
         textBox.SetActive(false);
         isActive = false;
-
         player.canMove = true;
     }
 
