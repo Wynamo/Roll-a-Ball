@@ -60,7 +60,6 @@ public class ActivateTextNPCWin : MonoBehaviour
     {
         if (waitForPress && Input.GetKeyDown(KeyCode.E))
         {
-
             if (!theTextBox.isActive)
             {
                 if (pickupController.numberOfPickups == PlayerPrefs.GetInt(pickupController.levelName))
