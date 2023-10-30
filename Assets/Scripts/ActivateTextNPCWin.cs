@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class ActivateTextNPCWin : MonoBehaviour
 {
+    public GameObject buttonPrompt;
 
     public TextAsset theText;
     public TextAsset winText;
@@ -30,6 +31,7 @@ public class ActivateTextNPCWin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        buttonPrompt.SetActive(false);
         theTextBox = FindObjectOfType<TextBoxManager>();
 
         if (theText != null)
@@ -91,6 +93,7 @@ public class ActivateTextNPCWin : MonoBehaviour
     {
         if (other.name == "OrboExpo2")
         {
+            buttonPrompt.SetActive(true);
             if (requireButtonPress)
             {
                 waitForPress = true;
@@ -113,9 +116,9 @@ public class ActivateTextNPCWin : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-
         if (other.name == "OrboExpo2")
         {
+            buttonPrompt.SetActive(false);
             waitForPress = false;
         }
     }
