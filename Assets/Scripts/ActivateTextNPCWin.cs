@@ -92,7 +92,7 @@ public class ActivateTextNPCWin : MonoBehaviour
     {
         if (other.name == "OrboExpo2")
         {
-            buttonPrompt.SetActive(true);
+            buttonPrompt.SetActive(!theTextBox.isActive);
             if (requireButtonPress)
             {
                 waitForPress = true;

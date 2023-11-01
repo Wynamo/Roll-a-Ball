@@ -44,7 +44,6 @@ public class ActivateText : MonoBehaviour
     {
         if (waitForPress && Input.GetKeyDown(KeyCode.E))
         {
-            buttonPrompt.SetActive(false);
             if (!theTextBox.isActive) 
             {
                 theTextBox.isActive = true;
@@ -65,7 +64,7 @@ public class ActivateText : MonoBehaviour
     {
        if (other.name == "OrboExpo2")
         {
-            buttonPrompt.SetActive(true);
+            buttonPrompt.SetActive(!theTextBox.isActive);
             if (requireButtonPress)
             {
                 waitForPress = true;
