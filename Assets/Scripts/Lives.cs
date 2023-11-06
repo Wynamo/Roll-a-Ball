@@ -11,10 +11,6 @@ public class Lives : MonoBehaviour
     //public int startingLives = 3;
 
     private Vector3 initialPosition;
-    
-    public float distance;
-
-    public bool isAbove;
 
     public GameObject restartButton;
 
@@ -45,23 +41,7 @@ public class Lives : MonoBehaviour
     private void Update()
     {
         PlayerPrefs.SetInt("lives", currentLives);
-        //CheckIsAbove();
     }
-
-    //public void CheckIsAbove()
-    //{
-    //    if (Physics.Raycast((transform.position), Vector3.down * distance, out RaycastHit hit, distance))
-    //    {
-    //        if (hit.collider.CompareTag("Enemy"))
-    //        {
-    //            isAbove = true;
-    //        }
-    //        else
-    //        {
-    //            isAbove = false;
-    //        }
-    //    }
-    //}
 
     void SetLivesText()
     {
@@ -92,14 +72,6 @@ public class Lives : MonoBehaviour
             collision.gameObject.SetActive(false);
             collision.gameObject.transform.parent.gameObject.SetActive(false);
         }
-            //if (transform.position.y > collision.gameObject.transform.position.y)
-            //{
-            //    collision.gameObject.SetActive(false);
-            //}
-            //else
-            //{
-            //    OnDeath();
-            //}
      }
 
     private void OnTriggerEnter(Collider other)
