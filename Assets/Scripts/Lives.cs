@@ -14,8 +14,11 @@ public class Lives : MonoBehaviour
 
     public GameObject restartButton;
 
-    public GameObject quitButton;
+    public int maxHealth;
+    public int currentHealth;
 
+    public GameObject quitButton;
+    public TextMeshProUGUI healthText;
     public GameObject gameOverTextObject;
     public TextMeshProUGUI livesText;
 
@@ -23,10 +26,12 @@ public class Lives : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1f;
+        currentHealth = maxHealth;
         quitButton.SetActive(false);
         gameOverTextObject.SetActive(false);
         currentLives = PlayerPrefs.GetInt("lives");
         SetLivesText();
+        SetHealthText();
         initialPosition = transform.position;
         restartButton.SetActive(false);
     }
@@ -34,8 +39,24 @@ public class Lives : MonoBehaviour
     void OnDeath()
     {
         currentLives--;
-        SetLivesText();
+        currentHealth = maxHealth;
         transform.position = initialPosition;
+        SetHealthText();
+        SetLivesText();
+    }
+
+    void OnHit()
+    {
+        currentHealth--;
+
+        if (currentHealth <= 0)
+        {
+            OnDeath();
+        }
+        else
+        {
+            SetHealthText();
+        }
     }
 
     private void Update()
@@ -57,6 +78,11 @@ public class Lives : MonoBehaviour
         }
     }
 
+    private void SetHealthText()
+    {
+        healthText.text = "Health: " + currentHealth.ToString();
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Obstacle"))
@@ -65,7 +91,7 @@ public class Lives : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            OnDeath();
+            OnHit();
         }
         if (collision.gameObject.CompareTag("EnemyHead"))
         {
