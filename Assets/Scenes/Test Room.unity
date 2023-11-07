@@ -1065,9 +1065,29 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5021130388671678817, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
+      propertyPath: heart1
+      value: 
+      objectReference: {fileID: 1254175303}
+    - target: {fileID: 5021130388671678817, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
+      propertyPath: heart2
+      value: 
+      objectReference: {fileID: 1766038502}
+    - target: {fileID: 5021130388671678817, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
+      propertyPath: heart3
+      value: 
+      objectReference: {fileID: 663889103}
+    - target: {fileID: 5021130388671678817, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
       propertyPath: distance
       value: 0.65
       objectReference: {fileID: 0}
+    - target: {fileID: 5021130388671678817, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
+      propertyPath: fullHeart
+      value: 
+      objectReference: {fileID: 4046475086360347014, guid: e87b4d7d8e6fc1f4faf9effe6b4dc195, type: 3}
+    - target: {fileID: 5021130388671678817, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
+      propertyPath: halfHeart
+      value: 
+      objectReference: {fileID: -3812448116124685897, guid: 40c6051e5850fdd4692fc03875989967, type: 3}
     - target: {fileID: 5021130388671678817, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
       propertyPath: livesText
       value: 
@@ -1077,6 +1097,10 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5021130388671678817, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
+      propertyPath: emptyHeart
+      value: 
+      objectReference: {fileID: -5278240611303351550, guid: a094f46c2017464458b5a49acaeb8d4e, type: 3}
+    - target: {fileID: 5021130388671678817, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
       propertyPath: healthText
       value: 
       objectReference: {fileID: 1544828031}
@@ -1085,6 +1109,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 599596285}
     - target: {fileID: 5021130388671678817, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
+      propertyPath: quarterHeart
+      value: 
+      objectReference: {fileID: -2260414534961470864, guid: dc2b32b1419a5a64587495c1caea5376, type: 3}
+    - target: {fileID: 5021130388671678817, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
       propertyPath: currentHealth
       value: 0
       objectReference: {fileID: 0}
@@ -1092,6 +1120,10 @@ PrefabInstance:
       propertyPath: restartButton
       value: 
       objectReference: {fileID: 958590478}
+    - target: {fileID: 5021130388671678817, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
+      propertyPath: threeQuarterHeart
+      value: 
+      objectReference: {fileID: -7541528283851764847, guid: b7f62d34f624220479aec6ef6663135d, type: 3}
     - target: {fileID: 5021130388671678817, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
       propertyPath: gameOverTextObject
       value: 
@@ -2208,7 +2240,6 @@ GameObject:
   - component: {fileID: 1254175304}
   - component: {fileID: 1254175306}
   - component: {fileID: 1254175305}
-  - component: {fileID: 1254175307}
   m_Layer: 5
   m_Name: Heart 1
   m_TagString: Untagged
@@ -2273,27 +2304,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1254175303}
   m_CullTransparentMesh: 1
---- !u!95 &1254175307
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1254175303}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a4a9261ffd583c347b35504beb44373f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1323255069
 GameObject:
   m_ObjectHideFlags: 0
