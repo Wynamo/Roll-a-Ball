@@ -100,6 +100,19 @@ public class TextBoxManager : MonoBehaviour
                 cancelTyping = true;
             }
         }
+        else if (Input.GetKeyDown(KeyCode.Escape) && pickupController.winOnTalk && pickupController.numberOfPickups == PlayerPrefs.GetInt(pickupController.levelName))
+        {
+            pickupController.SetBool(pickupController.levelNameCompletedKey, true);
+            PlayerPrefs.SetString("lastLevelCompleted", pickupController.levelName);
+            DisableTextBox();
+            winTextObject.SetActive(true);
+            continueButton.SetActive(true);
+            Time.timeScale = 0f;
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            DisableTextBox();
+        }
     }
 
     private IEnumerator TextScroll (string lineOfText)

@@ -7,6 +7,8 @@ public class PauseMenuController : MonoBehaviour
 
     public GameObject pauseMenu;
 
+    public TextBoxManager textBoxManager;
+
     public bool isActive;
 
     // Start is called before the first frame update
@@ -19,7 +21,11 @@ public class PauseMenuController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !isActive)
+        if (textBoxManager.isActive && Input.GetKeyDown(KeyCode.Escape))
+        {
+            return;
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape) && !isActive)
         {
             isActive = true;
             pauseMenu.SetActive(true);
