@@ -15,6 +15,8 @@ public class PickupController : MonoBehaviour
 
     public string levelName;
 
+    public int optionalPickups = 3;
+
     public string levelNameCompletedKey;
 
     public bool winOnTalk;
@@ -81,6 +83,6 @@ public class PickupController : MonoBehaviour
 
     public int CountPickups()
     {
-        return GameObject.FindGameObjectsWithTag("PickUp").Count();
+        return GameObject.FindGameObjectsWithTag("PickUp").Count() - optionalPickups;
     }
 }
