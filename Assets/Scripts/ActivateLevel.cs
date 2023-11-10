@@ -19,6 +19,8 @@ public class ActivateLevel : MonoBehaviour
 
     public bool isBeaten;
 
+    public GameObject buttonPrompt;
+
     public string levelLastCompleted;
 
     public string playerPrefLevelName;
@@ -27,6 +29,7 @@ public class ActivateLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        buttonPrompt.SetActive(false);
         levelLastCompleted = PlayerPrefs.GetString("lastLevelCompleted");
         isBeaten = GetBool(playerPrefLevelName);
         theLevelSelector = FindObjectOfType<LevelSelectManager>();
@@ -58,12 +61,13 @@ public class ActivateLevel : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        buttonPrompt.SetActive(true);
         waitForPress = true;
         return;
     }
     private void OnTriggerExit(Collider other)
     {
-
+        buttonPrompt.SetActive(false);
         if (other.name == "OrboExpo2")
         {
             waitForPress = false;
