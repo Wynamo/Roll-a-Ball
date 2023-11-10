@@ -1153,6 +1153,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1492155728}
     - target: {fileID: 5380622639215889505, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
+      propertyPath: optionalPickups
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5380622639215889505, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
       propertyPath: pickupsLeftText
       value: 
       objectReference: {fileID: 0}
