@@ -518,7 +518,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ESC - To Pause
+  m_text: ESC - To Pause & Skip Dialogue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cdb2397aa17f335458515ecc9e1bcbab, type: 2}
   m_sharedMaterial: {fileID: -6181527626035244453, guid: cdb2397aa17f335458515ecc9e1bcbab, type: 2}

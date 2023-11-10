@@ -62,7 +62,7 @@ public class ActivateTextNPCWin : MonoBehaviour
         {
             if (!theTextBox.isActive)
             {
-                if (pickupController.numberOfPickups == PlayerPrefs.GetInt(pickupController.levelName))
+                if (PlayerPrefs.GetInt(pickupController.levelName) >= pickupController.numberOfPickups)
                 {
                     theTextBox.isActive = true;
                     theTextBox.ReloadScript(winText);

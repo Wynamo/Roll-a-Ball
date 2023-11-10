@@ -15,7 +15,7 @@ public class PickupController : MonoBehaviour
 
     public string levelName;
 
-    public int optionalPickups = 3;
+    public int optionalPickups;
 
     public string levelNameCompletedKey;
 
@@ -49,6 +49,7 @@ public class PickupController : MonoBehaviour
         {
             if (winOnTalk)
             {
+                Debug.Log("hi");
                 return;
             }
             else
