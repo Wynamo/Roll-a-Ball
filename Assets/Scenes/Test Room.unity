@@ -455,7 +455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wokenUp: 0
   player: {fileID: 1755294175}
-  awakenDistance: 5
+  awakenDistance: 2.5
   chaseState: {fileID: 69284246}
 --- !u!1001 &188189990
 PrefabInstance:
