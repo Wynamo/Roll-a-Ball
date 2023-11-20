@@ -389,7 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64deb60c09a005f4b8effe2c0784c535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseDistance: 5
+  chaseDistance: 10
   patrolState: {fileID: 945313684}
   isInChaseRange: 0
   navMeshAgent: {fileID: 852145358}
@@ -455,7 +455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wokenUp: 0
   player: {fileID: 1755294175}
-  awakenDistance: 2.5
+  awakenDistance: 5
   chaseState: {fileID: 69284246}
 --- !u!1001 &188189990
 PrefabInstance:
@@ -2075,7 +2075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9731fed8ef2dadf4e8565b0c964f23a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforeSleep: 10
+  timeBeforeSleep: 20
   sleepState: {fileID: 130301675}
   canSeePlayer: 1
   chaseState: {fileID: 69284246}
