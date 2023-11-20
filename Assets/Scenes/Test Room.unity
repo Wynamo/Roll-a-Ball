@@ -1113,6 +1113,18 @@ PrefabInstance:
       propertyPath: distance
       value: 0.51
       objectReference: {fileID: 0}
+    - target: {fileID: 1238943126517969731, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
+      propertyPath: jumpClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8ea2fea6608bcc6469af00da3f2582ad, type: 3}
+    - target: {fileID: 1238943126517969731, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1755294180}
+    - target: {fileID: 1238943126517969731, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
+      propertyPath: playerAudioSource
+      value: 
+      objectReference: {fileID: 1755294180}
     - target: {fileID: 1434833188407032506, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
       propertyPath: m_Name
       value: OrboExpo2
