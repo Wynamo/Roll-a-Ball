@@ -10,6 +10,8 @@ public class PlayerJump : MonoBehaviour
     public bool isGrounded;
     public float gravity = -9.81f;
     public float distance = 10f;
+    public AudioSource audioSource;
+    public AudioClip jumpClip;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +52,7 @@ public class PlayerJump : MonoBehaviour
         // Adds force to the player rigidbody to jump
         if (isGrounded)
         {
+            audioSource.PlayOneShot(jumpClip);
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isGrounded = false;
         }
