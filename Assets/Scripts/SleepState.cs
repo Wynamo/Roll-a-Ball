@@ -2,22 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SleepState : IState
+public class SleepState : State
 {
-    public void OnEnter(StateController sc)
+
+    public bool wokenUp;
+    public GameObject player;
+    public float awakenDistance;
+    public ChaseState chaseState;
+
+    public override State RunCurrentState()
     {
-        // "What was that!?"
+        if (wokenUp)
+        {
+            return chaseState;
+        }
+        else
+        {
+            return this;
+        }
     }
-    public void UpdateState(StateController sc)
+
+    private void Update()
     {
-        // Search for player
-    }
-    public void OnHurt(StateController sc)
-    {
-        // Transition to Hurt State
-    }
-    public void OnExit(StateController sc)
-    {
-        // "Must've been the wind"
+        if (Vector3.Distance(transform.position, player.transform.position) < awakenDistance)
+        {
+            wokenUp = true;
+        }
+        else
+        {
+            wokenUp = false;
+        }
     }
 }

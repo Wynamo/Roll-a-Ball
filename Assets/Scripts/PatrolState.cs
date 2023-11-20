@@ -2,30 +2,50 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PatrolState : IState
+public class PatrolState : State
 {
-    float timeBeforeSleep;
-    public void OnEnter(StateController sc)
+    public float timeBeforeSleep;
+    public SleepState sleepState;
+    public bool canSeePlayer;
+    public ChaseState chaseState;
+
+    public override State RunCurrentState()
     {
-        timeBeforeSleep = 20;
-    }
-    public void UpdateState(StateController sc)
-    {
-        if (Physics.Raycast(sc.transform.position, sc.transform.forward))
-        {
-            sc.ChangeState(sc.chaseState);
-        }
         if (timeBeforeSleep < 0)
         {
-            sc.ChangeState(sc.sleepState);
+            return sleepState;
         }
-        timeBeforeSleep -= Time.deltaTime;
+        if (canSeePlayer)
+        {
+            return chaseState;
+        }
+        else
+        {
+            return this;
+        }
     }
-    public void OnHurt(StateController sc)
+
+    private void Update()
     {
-        sc.ChangeState(sc.hurtState);
+        timeBeforeSleep = Time.time;
     }
-    public void OnExit(StateController sc)
-    {
-    }
+    //float timeBeforeSleep;
+    //public void OnEnter(StateController sc)
+    //{
+    //    timeBeforeSleep = 20;
+    //}
+    //public void UpdateState(StateController sc)
+    //{
+    //    if (Physics.Raycast(sc.transform.position, sc.transform.forward))
+    //    {
+    //        sc.ChangeState(sc.chaseState);
+    //    }
+    //    if (timeBeforeSleep < 0)
+    //    {
+    //    }
+    //    timeBeforeSleep -= Time.deltaTime;
+    //}
+    //public void OnExit(StateController sc)
+    //{
+    //}
 }

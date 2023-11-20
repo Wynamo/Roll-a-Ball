@@ -4,36 +4,25 @@ using UnityEngine;
 
 public class StateController : MonoBehaviour
 {
-    IState currentState;
-    public SleepState sleepState = new SleepState();
-    public ChaseState chaseState = new ChaseState();
-    public PatrolState patrolState = new PatrolState();
-    public HurtState hurtState = new HurtState();
-    private void Start()
-    {
-        ChangeState(patrolState);
-    }
+    public State currentState;
+
     void Update()
     {
-        if (currentState != null)
-        {
-            currentState.UpdateState(this);
-        }
+        RunStateMachine();
     }
-    public void ChangeState(IState newState)
+
+    private void RunStateMachine()
     {
-        if (currentState != null)
+        State nextState = currentState?.RunCurrentState();
+
+        if (nextState != null)
         {
-            currentState.OnExit(this);
+            SwitchToTheNextState(nextState);
         }
-        currentState = newState;
-        currentState.OnEnter(this);
     }
-}
-public interface IState
-{
-    public void OnEnter(StateController controller);
-    public void UpdateState(StateController controller);
-    public void OnHurt(StateController controller);
-    public void OnExit(StateController controller);
+
+    private void SwitchToTheNextState(State nextState)
+    {
+        currentState = nextState;
+    }
 }

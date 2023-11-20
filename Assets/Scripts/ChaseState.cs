@@ -1,23 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-public class ChaseState : IState
+public class ChaseState : State
 {
-    public void OnEnter(StateController sc)
+
+    public float chaseDistance;
+    public PatrolState patrolState;
+    public bool isInChaseRange;
+    public NavMeshAgent navMeshAgent;
+    public GameObject player;  
+
+    public override State RunCurrentState()
     {
-        // "What was that!?"
+        if (!isInChaseRange)
+        {
+            return patrolState;
+        }
+        else
+        {
+            navMeshAgent.SetDestination(player.transform.position);
+            return this;
+        }
     }
-    public void UpdateState(StateController sc)
+
+    private void Update()
     {
-        // Search for player
-    }
-    public void OnHurt(StateController sc)
-    {
-        // Transition to Hurt State
-    }
-    public void OnExit(StateController sc)
-    {
-        // "Must've been the wind"
+        if (Vector3.Distance(transform.position, player.transform.position) < chaseDistance)
+        {
+            isInChaseRange = true;
+        }
+        else
+        {
+            isInChaseRange = false;
+        }
     }
 }
