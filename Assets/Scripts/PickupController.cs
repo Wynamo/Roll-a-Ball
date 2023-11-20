@@ -49,7 +49,6 @@ public class PickupController : MonoBehaviour
         {
             if (winOnTalk)
             {
-                Debug.Log("hi");
                 return;
             }
             else
