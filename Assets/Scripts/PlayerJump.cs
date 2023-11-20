@@ -58,6 +58,3 @@ public class PlayerJump : MonoBehaviour
         }
     }
 }
-
-
-//CheckGround Function is from Modular First Person Controller asset by JeCase on the Unity Asset Store
