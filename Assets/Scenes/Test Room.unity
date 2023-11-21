@@ -1646,7 +1646,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852145353}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 75.54, y: 0.67, z: 8.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1973,7 +1973,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892579756}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 78.101, y: 0.7, z: 12.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2214,6 +2214,8 @@ MonoBehaviour:
   chaseState: {fileID: 69284246}
   player: {fileID: 1755294175}
   chaseRange: 10
+  navMeshAgent: {fileID: 852145358}
+  enemyStartPosition: {fileID: 2024772146}
 --- !u!4 &945313685
 Transform:
   m_ObjectHideFlags: 0
@@ -2347,6 +2349,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1071946607}
   m_CullTransparentMesh: 1
+--- !u!1 &1088597660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1088597661}
+  m_Layer: 0
+  m_Name: Enemy Starting Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1088597661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088597660}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 78.101, y: 0.7, z: 12.86}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1106239499
 GameObject:
   m_ObjectHideFlags: 0
@@ -13511,6 +13544,8 @@ MonoBehaviour:
   chaseState: {fileID: 1920134750}
   player: {fileID: 1755294175}
   chaseRange: 10
+  navMeshAgent: {fileID: 892579761}
+  enemyStartPosition: {fileID: 1088597660}
 --- !u!4 &1686959237
 Transform:
   m_ObjectHideFlags: 0
@@ -14468,6 +14503,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61d0a92769da06d43b03effb8d19f070, type: 3}
+--- !u!1 &2024772146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2024772147}
+  m_Layer: 0
+  m_Name: Enemy Starting Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2024772147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024772146}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 75.54, y: 0.67, z: 8.59}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &2026919159 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7541655163675196464, guid: 734678bc2efca7d428707557712cfd96, type: 3}
@@ -20652,6 +20718,8 @@ SceneRoots:
   - {fileID: 64948340}
   - {fileID: 661287931}
   - {fileID: 1492155726}
-  - {fileID: 852145357}
+  - {fileID: 2024772147}
+  - {fileID: 1088597661}
   - {fileID: 892579760}
+  - {fileID: 852145357}
   - {fileID: 411986238}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PatrolState : State
 {
@@ -11,6 +12,8 @@ public class PatrolState : State
     public ChaseState chaseState;
     public GameObject player;
     public float chaseRange;
+    public NavMeshAgent navMeshAgent;
+    public GameObject enemyStartPosition;
 
     public override State RunCurrentState()
     {
@@ -46,6 +49,7 @@ public class PatrolState : State
         else
         {
             canSeePlayer = false;
+            navMeshAgent.SetDestination(enemyStartPosition.transform.position);
         }
     }
     //float timeBeforeSleep;
