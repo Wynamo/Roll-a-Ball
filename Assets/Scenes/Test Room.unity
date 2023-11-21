@@ -2208,9 +2208,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeBeforeSleep: 20
+  maxTimeSleep: 20
   sleepState: {fileID: 130301675}
-  canSeePlayer: 1
+  canSeePlayer: 0
   chaseState: {fileID: 69284246}
+  player: {fileID: 1755294175}
+  chaseRange: 10
 --- !u!4 &945313685
 Transform:
   m_ObjectHideFlags: 0
@@ -13502,9 +13505,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeBeforeSleep: 20
+  maxTimeSleep: 20
   sleepState: {fileID: 872847891}
   canSeePlayer: 1
   chaseState: {fileID: 1920134750}
+  player: {fileID: 1755294175}
+  chaseRange: 10
 --- !u!4 &1686959237
 Transform:
   m_ObjectHideFlags: 0

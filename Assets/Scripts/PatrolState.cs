@@ -5,9 +5,12 @@ using UnityEngine;
 public class PatrolState : State
 {
     public float timeBeforeSleep;
+    public float maxTimeSleep;
     public SleepState sleepState;
     public bool canSeePlayer;
     public ChaseState chaseState;
+    public GameObject player;
+    public float chaseRange;
 
     public override State RunCurrentState()
     {
@@ -27,7 +30,23 @@ public class PatrolState : State
 
     private void Update()
     {
-        timeBeforeSleep = Time.time;
+        if (!canSeePlayer)
+        {
+            timeBeforeSleep -= Time.deltaTime;
+        }
+        else
+        {
+            timeBeforeSleep = maxTimeSleep;
+        }
+
+        if (Vector3.Distance(transform.position, player.transform.position) < chaseRange)
+        {
+            canSeePlayer = true;
+        }
+        else
+        {
+            canSeePlayer = false;
+        }
     }
     //float timeBeforeSleep;
     //public void OnEnter(StateController sc)
