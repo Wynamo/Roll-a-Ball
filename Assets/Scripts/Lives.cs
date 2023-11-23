@@ -22,6 +22,7 @@ public class Lives : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioClip[] hurtSounds;
+    public AudioClip oneUpSound;
 
     private int currentLives;
     //public int startingLives = 3;
@@ -136,6 +137,7 @@ public class Lives : MonoBehaviour
         if (other.gameObject.CompareTag("OneUp"))
         {
             other.gameObject.SetActive(false);
+            audioSource.PlayOneShot(oneUpSound);
             currentLives++;
             SetLivesText();
         }
