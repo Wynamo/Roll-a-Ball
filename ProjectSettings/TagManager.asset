@@ -11,6 +11,8 @@ TagManager:
   - Door
   - Enemy
   - EnemyHead
+  - Captain
+  - OldMan
   layers:
   - Default
   - TransparentFX
