@@ -6,6 +6,7 @@ public class PauseMenuControllerWorldMap : MonoBehaviour
 {
 
     public GameObject pauseMenu;
+    public GameObject controlsMenu;
 
     public bool isActive;
 
@@ -29,6 +30,7 @@ public class PauseMenuControllerWorldMap : MonoBehaviour
         {
             isActive = false;
             pauseMenu.SetActive(false);
+            controlsMenu.SetActive(false);
             Time.timeScale = 1f;
         }
     }
@@ -38,5 +40,17 @@ public class PauseMenuControllerWorldMap : MonoBehaviour
         isActive = false;
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
+    }
+
+    public void Controls()
+    {
+        pauseMenu.SetActive(false);
+        controlsMenu.SetActive(true);
+    }
+
+    public void Back()
+    {
+        pauseMenu.SetActive(true);
+        controlsMenu.SetActive(false);
     }
 }

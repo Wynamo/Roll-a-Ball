@@ -6,6 +6,7 @@ public class PauseMenuController : MonoBehaviour
 {
 
     public GameObject pauseMenu;
+    public GameObject controlsMenu;
 
     public TextBoxManager textBoxManager;
 
@@ -35,8 +36,21 @@ public class PauseMenuController : MonoBehaviour
         {
             isActive = false;
             pauseMenu.SetActive(false);
+            controlsMenu.SetActive(false);
             Time.timeScale = 1f;
         }
+    }
+
+    public void Controls()
+    {
+        pauseMenu.SetActive(false);
+        controlsMenu.SetActive(true);
+    }
+
+    public void Back()
+    {
+        pauseMenu.SetActive(true);
+        controlsMenu.SetActive(false);
     }
 
     public void Resume()
