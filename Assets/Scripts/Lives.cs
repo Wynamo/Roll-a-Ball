@@ -38,6 +38,7 @@ public class Lives : MonoBehaviour
     public GameObject quitButton;
     public GameObject gameOverTextObject;
     public TextMeshProUGUI livesText;
+    public Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
@@ -116,6 +117,8 @@ public class Lives : MonoBehaviour
         {
             OnHit(4);
             transform.position = playerJump.lastGroundedPosition;
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
         }
         if (collision.gameObject.CompareTag("Enemy"))
         {
