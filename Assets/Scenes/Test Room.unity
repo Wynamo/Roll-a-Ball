@@ -1164,7 +1164,7 @@ PrefabInstance:
     - target: {fileID: 1238943126517969731, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
       propertyPath: jumpClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8ea2fea6608bcc6469af00da3f2582ad, type: 3}
+      objectReference: {fileID: 8300000, guid: e6fcaed9d3e397f43a0cd57ce14e0caa, type: 3}
     - target: {fileID: 1238943126517969731, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
       propertyPath: audioSource
       value: 
@@ -2102,7 +2102,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.499, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.05, z: 0.5}
+  m_LocalScale: {x: 0.7, y: 0.075, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 892579760}
@@ -2949,7 +2949,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.499, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.05, z: 0.5}
+  m_LocalScale: {x: 0.7, y: 0.075, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 852145357}

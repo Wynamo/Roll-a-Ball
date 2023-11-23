@@ -20,6 +20,8 @@ public class Lives : MonoBehaviour
     public Sprite quarterHeart;
     public Sprite emptyHeart;
 
+    public AudioClip[] hurtSounds;
+
     private int currentLives;
     //public int startingLives = 3;
 
