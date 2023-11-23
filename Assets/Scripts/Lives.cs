@@ -75,21 +75,54 @@ public class Lives : MonoBehaviour
     {
         currentHealth -= damage;
         audioSource.PlayOneShot(hurtSounds[Random.Range(0, hurtSounds.Length)]);
+        if (currentHealth < 0)
+        {
+            heart1.GetComponent<Image>().sprite = emptyHeart;
+            heart2.GetComponent<Image>().sprite = emptyHeart;
+            heart3.GetComponent<Image>().sprite = emptyHeart;
+            OnDeath();
+        }
         switch (currentHealth)
         {
-            case 0:  heart3.GetComponent<Image>().sprite = emptyHeart; OnDeath(); break;
-            case 1:  heart3.GetComponent<Image>().sprite = quarterHeart; break;
-            case 2:  heart3.GetComponent<Image>().sprite = halfHeart; break;
-            case 3:  heart3.GetComponent<Image>().sprite = threeQuarterHeart; break;
-            case 4:  heart2.GetComponent<Image>().sprite = emptyHeart; break;
-            case 5:  heart2.GetComponent<Image>().sprite = quarterHeart; break;
-            case 6:  heart2.GetComponent<Image>().sprite = halfHeart; break;
-            case 7:  heart2.GetComponent<Image>().sprite = threeQuarterHeart; break;
-            case 8:  heart1.GetComponent<Image>().sprite = emptyHeart; break;
-            case 9:  heart1.GetComponent<Image>().sprite = quarterHeart; break;
-            case 10: heart1.GetComponent<Image>().sprite = halfHeart; break;
-            case 11: heart1.GetComponent<Image>().sprite = threeQuarterHeart; break;
-            case 12: break;
+            case 0: heart1.GetComponent<Image>().sprite = emptyHeart;
+                heart2.GetComponent<Image>().sprite = emptyHeart;
+                heart3.GetComponent<Image>().sprite = emptyHeart; OnDeath(); break;
+            case 1: heart1.GetComponent<Image>().sprite = emptyHeart;
+                heart2.GetComponent<Image>().sprite = emptyHeart;
+                heart3.GetComponent<Image>().sprite = quarterHeart; break;
+            case 2: heart1.GetComponent<Image>().sprite = emptyHeart;
+                heart2.GetComponent<Image>().sprite = emptyHeart;
+                heart3.GetComponent<Image>().sprite = halfHeart; break;
+            case 3: heart1.GetComponent<Image>().sprite = emptyHeart;
+                heart2.GetComponent<Image>().sprite = emptyHeart;
+                heart3.GetComponent<Image>().sprite = threeQuarterHeart; break;
+            case 4: heart1.GetComponent<Image>().sprite = emptyHeart; 
+                heart2.GetComponent<Image>().sprite = emptyHeart;
+                heart3.GetComponent<Image>().sprite = fullHeart; break;
+            case 5: heart1.GetComponent<Image>().sprite = emptyHeart;
+                heart2.GetComponent<Image>().sprite = quarterHeart;
+                heart3.GetComponent<Image>().sprite = fullHeart; break;
+            case 6: heart1.GetComponent<Image>().sprite = emptyHeart; 
+                heart2.GetComponent<Image>().sprite = halfHeart;
+                heart3.GetComponent<Image>().sprite = fullHeart; break;
+            case 7: heart1.GetComponent<Image>().sprite = emptyHeart;
+                heart2.GetComponent<Image>().sprite = threeQuarterHeart;
+                heart3.GetComponent<Image>().sprite = fullHeart; break;
+            case 8:  heart1.GetComponent<Image>().sprite = emptyHeart;
+                heart2.GetComponent<Image>().sprite = fullHeart;
+                heart3.GetComponent<Image>().sprite = fullHeart; break;
+            case 9:  heart1.GetComponent<Image>().sprite = quarterHeart;
+                heart2.GetComponent<Image>().sprite = fullHeart;
+                heart3.GetComponent<Image>().sprite = fullHeart; break;
+            case 10: heart1.GetComponent<Image>().sprite = halfHeart;
+                heart2.GetComponent<Image>().sprite = fullHeart;
+                heart3.GetComponent<Image>().sprite = fullHeart; break;
+            case 11: heart1.GetComponent<Image>().sprite = threeQuarterHeart; 
+                heart2.GetComponent<Image>().sprite = fullHeart;
+                heart3.GetComponent<Image>().sprite = fullHeart; break;
+            case 12: heart1.GetComponent<Image>().sprite = fullHeart;
+                heart2.GetComponent<Image>().sprite = fullHeart;
+                heart3.GetComponent<Image>().sprite = fullHeart; break;
         }
     }
 
