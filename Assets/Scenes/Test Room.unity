@@ -1159,7 +1159,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1238943126517969731, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
       propertyPath: distance
-      value: 0.51
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 1238943126517969731, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
       propertyPath: jumpClip
