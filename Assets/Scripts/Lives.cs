@@ -20,6 +20,7 @@ public class Lives : MonoBehaviour
     public Sprite quarterHeart;
     public Sprite emptyHeart;
 
+    public AudioSource audioSource;
     public AudioClip[] hurtSounds;
 
     private int currentLives;
@@ -69,7 +70,7 @@ public class Lives : MonoBehaviour
     void OnHit()
     {
         currentHealth--;
-
+        audioSource.PlayOneShot(hurtSounds[Random.Range(0, hurtSounds.Length)]);
         switch (currentHealth)
         {
             case 0:  heart3.GetComponent<Image>().sprite = emptyHeart; OnDeath(); break;
