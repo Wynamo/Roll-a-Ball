@@ -64,6 +64,7 @@ public class ActivateTextNPCWin : MonoBehaviour
             {
                 if (PlayerPrefs.GetInt(pickupController.levelName) >= pickupController.numberOfPickups)
                 {
+                    theTextBox.PlayTalkSound(this);
                     theTextBox.isActive = true;
                     theTextBox.ReloadScript(winText);
                     theTextBox.currentLine = winStartLine;
@@ -72,6 +73,7 @@ public class ActivateTextNPCWin : MonoBehaviour
                 }
                 else
                 {
+                    theTextBox.PlayTalkSound(this);
                     theTextBox.isActive = true;
                     theTextBox.ReloadScript(theText);
                     theTextBox.currentLine = startLine;
