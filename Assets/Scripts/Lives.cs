@@ -26,6 +26,8 @@ public class Lives : MonoBehaviour
     private int currentLives;
     //public int startingLives = 3;
 
+    public PlayerJump playerJump;
+
     private Vector3 initialPosition;
 
     public GameObject restartButton;
@@ -67,9 +69,9 @@ public class Lives : MonoBehaviour
         heart3.GetComponent<Image>().sprite = fullHeart;
     }
 
-    void OnHit()
+    void OnHit(int damage)
     {
-        currentHealth--;
+        currentHealth -= damage;
         audioSource.PlayOneShot(hurtSounds[Random.Range(0, hurtSounds.Length)]);
         switch (currentHealth)
         {
@@ -112,11 +114,12 @@ public class Lives : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            OnDeath();
+            OnHit(4);
+            transform.position = playerJump.lastGroundedPosition;
         }
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            OnHit();
+            OnHit(1);
         }
         if (collision.gameObject.CompareTag("EnemyHead"))
         {
@@ -133,6 +136,5 @@ public class Lives : MonoBehaviour
             currentLives++;
             SetLivesText();
         }
-
     }
 }

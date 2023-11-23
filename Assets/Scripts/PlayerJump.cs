@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerJump : MonoBehaviour
@@ -12,6 +13,8 @@ public class PlayerJump : MonoBehaviour
     public float distance = 10f;
     public AudioSource audioSource;
     public AudioClip jumpClip;
+    public GameObject textBox;
+    public Vector3 lastGroundedPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +41,7 @@ public class PlayerJump : MonoBehaviour
         if (Physics.Raycast((transform.position), Vector3.down * distance, out RaycastHit hit, distance))
         {
             isGrounded = true;
+            lastGroundedPosition = transform.position;
         }
         else
         {
@@ -45,12 +49,10 @@ public class PlayerJump : MonoBehaviour
         }
     }
 
-
-
     private void Jump()
     {
         // Adds force to the player rigidbody to jump
-        if (isGrounded)
+        if (isGrounded && !textBox.activeSelf)
         {
             audioSource.PlayOneShot(jumpClip);
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
