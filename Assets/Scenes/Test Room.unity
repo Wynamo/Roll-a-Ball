@@ -1158,6 +1158,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1238943126517969731, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
+      propertyPath: textBox
+      value: 
+      objectReference: {fileID: 639341788}
+    - target: {fileID: 1238943126517969731, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
       propertyPath: distance
       value: 0.65
       objectReference: {fileID: 0}
@@ -1269,6 +1273,10 @@ PrefabInstance:
       propertyPath: healthText
       value: 
       objectReference: {fileID: 1544828031}
+    - target: {fileID: 5021130388671678817, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
+      propertyPath: playerJump
+      value: 
+      objectReference: {fileID: 661287933}
     - target: {fileID: 5021130388671678817, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
       propertyPath: quitButton
       value: 
@@ -1386,6 +1394,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1775084017410990080, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
   m_PrefabInstance: {fileID: 661287931}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &661287933 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1238943126517969731, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
+  m_PrefabInstance: {fileID: 661287931}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755294175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c435ce46247f14d44aa168d643e23aef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &663889103
 GameObject:
   m_ObjectHideFlags: 0
