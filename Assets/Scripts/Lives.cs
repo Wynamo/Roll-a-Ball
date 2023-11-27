@@ -58,6 +58,7 @@ public class Lives : MonoBehaviour
     void OnDeath()
     {
         currentLives--;
+        //yield return new WaitForSeconds(2.0f);
         currentHealth = maxHealth;
         transform.position = initialPosition;
         InitHearts();
@@ -150,7 +151,10 @@ public class Lives : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             OnHit(4);
-            transform.position = playerJump.lastGroundedPosition;
+            if (currentHealth > 0 && currentHealth != maxHealth)
+            {
+                transform.position = playerJump.lastGroundedPosition;
+            }
             rb.velocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
         }
