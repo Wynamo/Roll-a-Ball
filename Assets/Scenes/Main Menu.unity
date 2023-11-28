@@ -5369,12 +5369,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295046719}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.62816244, y: -0.324672, z: 0.32467207, w: 0.62816244}
-  m_LocalPosition: {x: -443.02, y: -41.03, z: 908}
-  m_LocalScale: {x: 7.0365, y: 7.0365, z: 7.0365}
+  m_LocalRotation: {x: -0.32467207, y: -0.62816244, z: -0.62816244, w: -0.324672}
+  m_LocalPosition: {x: -0.07285525, y: 0.000614114, z: 0}
+  m_LocalScale: {x: 0.0010884665, y: 0.0010884665, z: 0.0010884665}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1296646841}
   m_LocalEulerAnglesHint: {x: -35.335, y: -90, z: 90}
 --- !u!1 &352784526
 GameObject:
@@ -6285,6 +6285,65 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1006567980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1006567982}
+  - component: {fileID: 1006567984}
+  m_Layer: 0
+  m_Name: Main Menu Animation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1006567982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006567980}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 640, y: 270, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &1006567984
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006567980}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 2d58d3425fcc8b8429085d15a79e0b7b, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 1
+  m_DirectorUpdateMode: 2
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 4972310986819421531, guid: 2d58d3425fcc8b8429085d15a79e0b7b, type: 2}
+    value: {fileID: 992721534}
+  - key: {fileID: -2096011778261977017, guid: 2d58d3425fcc8b8429085d15a79e0b7b, type: 2}
+    value: {fileID: 878486951}
+  - key: {fileID: -6915276627266282583, guid: 2d58d3425fcc8b8429085d15a79e0b7b, type: 2}
+    value: {fileID: 1013405904}
+  - key: {fileID: 6435124053862939269, guid: 2d58d3425fcc8b8429085d15a79e0b7b, type: 2}
+    value: {fileID: 1296646837}
+  - key: {fileID: -9118205460553757043, guid: 2d58d3425fcc8b8429085d15a79e0b7b, type: 2}
+    value: {fileID: 295046720}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1001 &1013405902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7476,6 +7535,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7780854501105530848, guid: 92080661a9a0c8b4e9380485c2f9c498, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1080558319}
+    - targetCorrespondingSourceObject: {fileID: 7780854501105530848, guid: 92080661a9a0c8b4e9380485c2f9c498, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 295046723}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6967338404158942554, guid: 92080661a9a0c8b4e9380485c2f9c498, type: 3}
       insertIndex: -1
@@ -7691,4 +7753,4 @@ SceneRoots:
   - {fileID: 1013405902}
   - {fileID: 159959326}
   - {fileID: 1899261365}
-  - {fileID: 295046723}
+  - {fileID: 1006567982}
