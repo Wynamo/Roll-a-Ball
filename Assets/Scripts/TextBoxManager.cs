@@ -107,7 +107,7 @@ public class TextBoxManager : MonoBehaviour
                 cancelTyping = true;
             }
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && pickupController.winOnTalk && PlayerPrefs.GetInt(pickupController.levelName) >= pickupController.numberOfPickups)
+        else if (Input.GetKeyDown(KeyCode.Escape) && pickupController.winOnTalk && PlayerPrefs.GetInt(pickupController.levelName) >= pickupController.numberOfPickups && isActive)
         {
             pickupController.SetBool(pickupController.levelNameCompletedKey, true);
             PlayerPrefs.SetString("lastLevelCompleted", pickupController.levelName);
