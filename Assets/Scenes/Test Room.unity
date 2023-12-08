@@ -860,7 +860,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &557370549
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1536,6 +1536,10 @@ PrefabInstance:
       propertyPath: anim
       value: 
       objectReference: {fileID: 557370553}
+    - target: {fileID: 5021130388671678817, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 557370548}
     - target: {fileID: 5021130388671678817, guid: 3aa9acb2f6c8b3e4e92ef4151514393d, type: 3}
       propertyPath: start
       value: 
@@ -2853,9 +2857,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d40cff6142cca094683317d02239c09a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraToLookAt: {fileID: 0}
+  cameraToLookAt: {fileID: 1761578924}
   distanceAbovePlayer: 1
-  player: {fileID: 0}
+  player: {fileID: 1755294175}
 --- !u!95 &1071946610
 Animator:
   serializedVersion: 5

@@ -27,8 +27,9 @@ public class Lives : MonoBehaviour
     //public int startingLives = 3;
 
 
-    public float transitionTime = 1f;
+    //public float transitionTime = 1f;
     //public Animator animator;
+    //public GameObject image;
 
     public PlayerJump playerJump;
 
@@ -48,6 +49,7 @@ public class Lives : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1f;
+        rb.isKinematic = false;
         currentHealth = maxHealth;
         quitButton.SetActive(false);
         gameOverTextObject.SetActive(false);
@@ -159,7 +161,7 @@ public class Lives : MonoBehaviour
             quitButton.SetActive(true);
             PlayerPrefs.SetInt("lives", 3);
             currentLives = PlayerPrefs.GetInt("lives");
-            Time.timeScale = 0f;
+            rb.isKinematic = true;
         }
     }
 
@@ -197,11 +199,12 @@ public class Lives : MonoBehaviour
         }
     }
 
-    
+
     //IEnumerator Transition()
     //{
+    //    image.SetActive(true);
     //    animator.SetTrigger("Start");
-
+    //    animator.ResetTrigger("Start");
     //    yield return new WaitForSeconds(transitionTime);
     //}
 
