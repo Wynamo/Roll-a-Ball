@@ -28,7 +28,7 @@ public class Lives : MonoBehaviour
 
 
     public float transitionTime = 1f;
-    public Animator animator;
+    //public Animator animator;
 
     public PlayerJump playerJump;
 
@@ -63,7 +63,7 @@ public class Lives : MonoBehaviour
         currentLives--;
         //yield return new WaitForSeconds(2.0f);
         currentHealth = maxHealth;
-        StartCoroutine(Transition());
+        //StartCoroutine(Transition());
         transform.position = initialPosition;
         InitHearts();
         SetLivesText();
@@ -198,11 +198,11 @@ public class Lives : MonoBehaviour
     }
 
     
-    IEnumerator Transition()
-    {
-        animator.SetTrigger("Start");
+    //IEnumerator Transition()
+    //{
+    //    animator.SetTrigger("Start");
 
-        yield return new WaitForSeconds(transitionTime);
-    }
+    //    yield return new WaitForSeconds(transitionTime);
+    //}
 
 }
