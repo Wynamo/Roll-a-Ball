@@ -5,7 +5,7 @@ using UnityEngine;
 public class Transition : MonoBehaviour
 {
 
-
+    public Animator animator;
 
     // Update is called once per frame
     void Update()
@@ -18,6 +18,6 @@ public class Transition : MonoBehaviour
 
     public void PlayTransition()
     {
-        
+        animator.Play(0);
     }
 }
