@@ -13,6 +13,7 @@ public class LevelManager : MonoBehaviour
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+        Time.timeScale = 1.0f;
     }
 
     public void QuitToDesktop()
