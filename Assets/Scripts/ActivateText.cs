@@ -25,6 +25,7 @@ public class ActivateText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //GetTextFile(input);
         buttonPrompt.SetActive(false);
         theTextBox = FindObjectOfType<TextBoxManager>();
 
@@ -92,6 +93,11 @@ public class ActivateText : MonoBehaviour
             buttonPrompt.SetActive(false);
             waitForPress = false;
         }
+    }
+
+    public void GetTextFile(TextAsset textFile)
+    {
+        theText = textFile;
     }
 }
 

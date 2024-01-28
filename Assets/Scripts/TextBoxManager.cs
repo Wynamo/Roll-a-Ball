@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class TextBoxManager : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class TextBoxManager : MonoBehaviour
 
     public int currentLine;
     public int endAtLine;
+
+    public GameObject choice1;
+    public GameObject choice2;
 
     public GameObject winTextObject;
     public GameObject continueButton;
@@ -31,7 +35,7 @@ public class TextBoxManager : MonoBehaviour
 
     public bool isActive;
 
-    private bool isTyping = false;
+    public bool isTyping = false;
     private bool cancelTyping = false;
 
     public float typeSpeed;
@@ -40,13 +44,15 @@ public class TextBoxManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        choice1.SetActive(false);
+        choice2.SetActive(false);
+
         player = FindObjectOfType<PlayerController>();
 
         if (textFile != null)
         {
             textLines = (textFile.text.Split('\n'));
         }
-
         if (endAtLine == 0)
         {
             endAtLine = textLines.Length - 1;
@@ -84,12 +90,12 @@ public class TextBoxManager : MonoBehaviour
                 {
                     if (pickupController.winOnTalk && PlayerPrefs.GetInt(pickupController.levelName) >= pickupController.numberOfPickups)
                     {
-                        pickupController.SetBool(pickupController.levelNameCompletedKey, true);
-                        PlayerPrefs.SetString("lastLevelCompleted", pickupController.levelName);
-                        DisableTextBox();
-                        winTextObject.SetActive(true);
-                        continueButton.SetActive(true);
-                        Time.timeScale = 0f;
+                        //pickupController.SetBool(pickupController.levelNameCompletedKey, true);
+                        //PlayerPrefs.SetString("lastLevelCompleted", pickupController.levelName);
+                        //DisableTextBox();
+                        //winTextObject.SetActive(true);
+                        //continueButton.SetActive(true);
+                        //Time.timeScale = 0f;
                     }
                     else
                     {
@@ -135,7 +141,17 @@ public class TextBoxManager : MonoBehaviour
             yield return new WaitForSeconds(typeSpeed);
         }
         theText.text = lineOfText;
-        isTyping = false;
+        //isTyping = false;
+        if (currentLine == endAtLine)
+        {
+            isTyping = true;
+            choice1.SetActive(true);
+            choice2.SetActive(true);
+        }
+        else
+        {
+            isTyping = false;
+        }
         cancelTyping = false;
     }
 

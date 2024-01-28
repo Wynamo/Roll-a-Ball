@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,16 +9,25 @@ public class ActivateTextNPCWin : MonoBehaviour
 {
     public GameObject buttonPrompt;
 
-    public TextAsset theText;
+    public TextAsset text;
+    [SerializeField] private TextAsset theText;
     public TextAsset winText;
 
     public int startLine;
     public int endLine;
     public int winStartLine;
     public int winEndLine;
+    public int theTextStartLine;
+    public int theTextEndLine;
 
+    public TextAsset[] teenTextFiles;
+    public TextAsset[] dadTextFiles;
+
+    private string[] theTextLines;
     public string[] textLines;
     public string[] winTextLines;
+
+    public string fileName = "teenDialog";
 
     public TextBoxManager theTextBox;
 
@@ -34,9 +44,9 @@ public class ActivateTextNPCWin : MonoBehaviour
         buttonPrompt.SetActive(false);
         theTextBox = FindObjectOfType<TextBoxManager>();
 
-        if (theText != null)
+        if (text != null)
         {
-            textLines = (theText.text.Split('\n'));
+            textLines = (text.text.Split('\n'));
         }
 
         if (endLine == 0)
@@ -75,7 +85,7 @@ public class ActivateTextNPCWin : MonoBehaviour
                 {
                     theTextBox.PlayTalkSound(this);
                     theTextBox.isActive = true;
-                    theTextBox.ReloadScript(theText);
+                    theTextBox.ReloadScript(text);
                     theTextBox.currentLine = startLine;
                     theTextBox.endAtLine = endLine;
                     theTextBox.EnableTextBox();
@@ -122,6 +132,27 @@ public class ActivateTextNPCWin : MonoBehaviour
             buttonPrompt.SetActive(false);
             waitForPress = false;
         }
+    }
+
+    public void GetTextFile(TextAsset textFile)
+    {
+        theText = textFile;
+        if (theText != null)
+        {
+            theTextLines = (theText.text.Split('\n'));
+            //Debug.Log(theTextLines);
+        }
+            theTextEndLine = theTextLines.Length - 1;
+            //Debug.Log(theTextLines.Length - 1);
+        theTextBox.isTyping = false;
+        theTextBox.ReloadScript(theText);
+        theTextBox.currentLine = theTextStartLine;
+        theTextBox.endAtLine = theTextEndLine;
+        theTextBox.choice1.gameObject.SetActive(false);
+        theTextBox.choice2.gameObject.SetActive(false);
+        theTextBox.choice1.GetComponent<Button>().onClick.AddListener(delegate { GetTextFile(teenTextFiles[0]); });
+        theTextBox.choice2.GetComponent<Button>().onClick.AddListener(delegate { GetTextFile(teenTextFiles[1]); });
+        theTextBox.EnableTextBox();
     }
 }
 
